@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estiloSorteoyahorcado.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Sorteo</title>
+    <link rel="icon" type="image/png" href="../img/favicon5.jpg" sizes="64x64">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="fixed-top"></div>
+    <header class="headerMaterias">
+    <div class="linea">EGR 2022</div>
+    <span class="lineasincursiva">|</span>
+    <div class="animate__animated animate__headShake">Juegos y otras</div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa07a;">
+    <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Página Principal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas de actividades</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../pages/practicasDelLenguaje.html">Prácticas del Lenguaje</a>
+                <a class="dropdown-item" href="../pages/matematica.html">Matemática</a>
+                <a class="dropdown-item" href="../pages/cienciasSociales.html">Ciencias Sociales</a>
+                <a class="dropdown-item" href="../pages/cienciasNaturales.html">Ciencias Naturales</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../pages/eljuegodelNumerito.html">El juego del numerito</a>
+                <a class="dropdown-item" href="../pages/composicion.html">La historia de San Martín</a>
+                <a class="dropdown-item" href="../pages/botellasDeAmor.html">Botellas de amor</a>
+                <a class="dropdown-item" href="../pages/sorteoAlumnos.html">Orden de alumnos</a>
+                <a class="dropdown-item" href="../pages/sorteoMafia.html">Sorteo Mafia</a>
+                <a class="dropdown-item" href="../pages/piedra_papel_tijera.html">Piedra, papel o tijera</a>
+                <a class="dropdown-item" href="../pages/ahorcado.html">Ahorcado</a>
+              </div>
+            </li>
+          <ul>
+        </div>
+  </nav>
+  </div>
+  <section class="dosColumnas">
+  <article id="articulo1S">
+    <div class="divCentrar">
+    <h2>Para sortear alumnos</h2>
+  </div>
+  <div class="divCentrar">
+      <h3>Elegí la cantidad de alumnos a sortear</h3>
+  </div>
+  <div class="divCentrar">
+    <input type="text" id="respuesta" placeholder=""></input>
+    <span class="espacio2"></span>
+    <button id="botonIntentar" onClick="cantidad_sorteos()"><i class="fa-solid fa-circle-play"></i></button>
+  </div>
+  <div class="divCentrar">
+    <p id="alumnoSorteado"></p>
+  </div>
+</article>
+<article id="articulo2S">
+  <div class="divCentrar">
+    <h2>Para sortear cómo sentarnos</h2>
+  </div>
+  <div class="divCentrar">
+    <h3>Cliqueá la silla para sortear</h3>
+  </div>
+  <div class="divCentrar">
+    <button id="botonIntentar" onClick="sorteoBancos()"><i class="fa-solid fa-chair"></i></button>
+  </div>
+  <div class="divCentrar">
+    <p id="parejasParaBancos"></p>
+  </div>
+  <div class="divCentrar">
+    <button class="volverJugar" onClick="sorteoBancos()" type="button">Volver a sortear</button></a>
+  </div>
+</div>
+</article>
+<article id="articulo3S">
+<div class="divCentrar">
+  <div class="centrarBoton">
+      <a href="../pages/sorteoMafia.html"><button type="button" class="btn btn-primary" style="background-color: #ffa07a;">Sorteo para "Mafia"</button></a>
+  </div>
+  <span class="espacio2"></span>
+  <div class="centrarBoton">
+      <a href="../pages/juegosyOtras.html"><button type="button" class="btn btn-primary" style="background-color: #ff8030;">Volver a Juegos</button></a>
+  </div>
+  </div>
+</article>      
+</section>  
+    <footer class="text-center text-white" style="background-color: #ffa07a;">
+      <div class="container pt-1">
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/profile.php?id=100079688658308&sk=about" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/septimoesc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>  
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:septimoesc24de8@gmail.com" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com/esc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+      </div>  
+    </footer>  
+    <script src="../JS/sorteo.js"></script>
+</body>
+</html>

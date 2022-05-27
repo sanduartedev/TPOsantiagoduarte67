@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estiloSorteoyahorcado.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Piedra, papel o tijera</title>
+    <link rel="icon" type="image/png" href="../img/favicon7.jpg" sizes="64x64">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="fixed-top"></div>
+    <header class="headerMaterias">
+    <div class="linea">EGR 2022</div>
+    <span class="lineasincursiva">|</span>
+    <div class="animate__animated animate__headShake">Juegos y otras</div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa07a;">
+    <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Página Principal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas de actividades</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../pages/practicasDelLenguaje.html">Prácticas del Lenguaje</a>
+                <a class="dropdown-item" href="../pages/matematica.html">Matemática</a>
+                <a class="dropdown-item" href="../pages/cienciasSociales.html">Ciencias Sociales</a>
+                <a class="dropdown-item" href="../pages/cienciasNaturales.html">Ciencias Naturales</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../pages/eljuegodelNumerito.html">El juego del numerito</a>
+                <a class="dropdown-item" href="../pages/composicion.html">La historia de San Martín</a>
+                <a class="dropdown-item" href="../pages/botellasDeAmor.html">Botellas de amor</a>
+                <a class="dropdown-item" href="../pages/sorteoAlumnos.html">Orden de alumnos</a>
+                <a class="dropdown-item" href="../pages/sorteoMafia.html">Sorteo Mafia</a>
+                <a class="dropdown-item" href="../pages/piedra_papel_tijera.html">Piedra, papel o tijera</a>
+                <a class="dropdown-item" href="../pages/ahorcado.html">Ahorcado</a>
+            </div>
+            </li>
+          <ul>
+        </div>
+  </nav>
+  </div>
+    <div class="divCentrarAhorcado">
+      <p id="tituloJuego">Piedra, papel o tijera</p>
+    </div>
+    <div class="divCentrarAhorcado">
+        <p id="subtituloJuego">Modo Fácil</p>
+    </div>
+<section id="tresColumnasPiedra">
+    <aside id="horca">
+        <div class="divCentrarPpt">
+            <p class="letras_ppt">Jugadas:</p><p class="letras_ppt" id="partidas"></p>
+        </div>
+        <div class="divCentrarPpt">
+            <p class="letras_ppt">Empatadas:</p><p class="letras_ppt" id="empatadas"></p>
+        </div>
+        <div class="divCentrarPpt">
+            <p class="letras_ppt">Ganó Rival:</p><p class="letras_ppt" id="ganadas_pc"></p>
+        </div>
+        <div class="divCentrarPpt">
+            <p class="letras_ppt">Ganaste:</p><p class="letras_ppt" id="ganadas_yo"></p>
+        </div>
+    </aside>
+    <article id="articlePiedra1">
+        <div class="divCentrarPpt"><p class="letras_ppt">Rival</p></div> 
+        <div class="divCentrarPpt">
+            <button class="ppt" id="jugada_pc"><i id="pregunta_inicial" class="fa-solid fa-circle-question fa-2x"></i></button>
+        </div>
+    </article>
+    <article id="articlePiedra2">
+        <div class="divCentrarPpt"><p class="letras_ppt">Tú</p></div>
+        <div class="divCentrarPpt">
+            <button class="ppt" id="jugada_yo"><i id="pregunta_inicial" class="fa-solid fa-circle-question fa-2x"></i></button>
+        </div>
+    </article>
+    <article id="articlePiedra3">
+        <div class="divCentrarPpt">
+            <p class="letras_ppt">Elige piedra, papel o tijera</p>
+        </div>
+        <div class="divCentrarPpt">
+            <button class="ppt" onClick="resultado(1)"><i id="piedra_derecha_elegir" class="fa-solid fa-hand-back-fist fa-2x"></i></button>
+            <span class="espacio2"></span>
+            <button class="ppt" onClick="resultado(2)"><i id="papel_derecha_elegir" class="fa-solid fa-hand fa-2x"></i></button>
+        <span class="espacio2"></span>
+            <button class="ppt" onClick="resultado(3)"><i id="tijera_derecha_elegir" class="fa-solid fa-hand-scissors fa-2x"></i></button>
+        </div>
+    </article>
+    <article id="articlePiedra4">
+    <div class="divCentrar">
+        <p class="letras_ppt">Jugar hasta ganar <p><span class="espacio2"></span></p>
+        <input type="text" value= "5" id="respuesta"></input><span class="espacio2"></span>
+        <p class="letras_ppt">partidas</p><p><input id="nro_ganadas" type="button" value="Cargar número de triunfos" onClick="cargar_nro_ganadas()"></p>
+    </div>
+    </article>
+    <article id="articlePiedra5">
+        <div class="divCentrarPpt">
+            <a href="../pages/piedra_papel_tijera.html"><button class="botonPpt" type="button">Modo Clásico</button></a>
+            <a href="../pages/piedra_papel_tijeraImposible.html"><button class="botonPpt" type="button">Modo Imposible</button></a>
+            <a href="../pages/juegosyOtras.html"><button type="button" class="botonPpt2">Volver a Juegos y otros</button></a>
+        </div>
+    </article>
+</section>      
+<footer class="text-center text-white" style="background-color: #ffa07a;">
+      <div class="container pt-1">
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/profile.php?id=100079688658308&sk=about" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/septimoesc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>  
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:septimoesc24de8@gmail.com" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com/esc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+      </div>  
+    </footer>  
+    <script src="../JS/piedra_papel_tijera_facil.js"></script>
+</body>
+</html>

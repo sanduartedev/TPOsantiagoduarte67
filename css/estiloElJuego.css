@@ -1,0 +1,888 @@
+@font-face {
+  font-family: calculator;
+  src: url(../fonts/Calculator.ttf);
+}
+@font-face {
+  font-family: Rye-Regular;
+  src: url(../fonts/Rye-Regular.ttf);
+}
+@font-face {
+  font-family: OleoScriptSwashCaps-Bold;
+  src: url(../fonts/OleoScriptSwashCaps-Bold.ttf);
+}
+@font-face {
+  font-family: Monofett-Regular;
+  src: url(../fonts/Monofett-Regular.ttf);
+}
+@font-face {
+  font-family: DancingScript;
+  src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+/*navbar*/
+.headerMaterias {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #000000;
+  color: #ffffff;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+.linea {
+  display: flex;
+  flex: 2 1 auto;
+  font-family: Rye-Regular, "Times New Roman", Times, serif;
+  justify-content: center;
+  font-size: 2.5em;
+  text-align: center;
+}
+.lineasincursiva {
+  display: flex;
+  flex: 1 1 auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10vh;
+}
+.animate__animated.animate__headShake {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  animation-iteration-count: infinite;
+}
+.nav-link {
+  font-weight: bold;
+}
+body {
+  background-color: #edc4b4;
+}
+#tresColumnas {
+  display: grid;
+  grid-template-columns: 18vw 60vw 18vw;
+  grid-gap: 1vw;
+  background-color: #edc4b4;
+}
+#cuatroColumnasfacil {
+  display: grid;
+  grid-template-columns: 18vw 40vw 18vw 18vw;
+  grid-gap: 1vw;
+  background-color: #edc4b4;
+}
+#cuatroColumnasDos {
+  display: grid;
+  grid-template-columns: 18vw 36vw 20vw 20vw;
+  grid-gap: 1vw;
+  background-color: #edc4b4;
+}
+#centro,
+#centroF,
+#centroD {
+  display: grid;
+  grid-column: 2 / 3;
+}
+#izquierda,
+#izquierdaF,
+#izquierdaF,
+#izquierdaD {
+  display: grid;
+  background-color: #000000;
+  grid-column: 1 / 2;
+}
+#derecha,
+#derechaF,
+#derechaD {
+  display: grid;
+  grid-column: 3 / 4;
+}
+#subrayado {
+  font-size: 1em;
+  color: #ffffff;
+  font-family: "Monofett-Regular", "Courier New", "Arial";
+  text-decoration: underline;
+}
+#subrayado2 {
+  font-size: 3em;
+  color: #ffffff;
+  font-family: "Monofett-Regular", "Courier New", "Arial";
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.centradoGris {
+  background-color: #707070;
+  min-width: 80vw;
+  display: block;
+  justify-content: center;
+  padding: 0;
+}
+.centrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#tituloJuego {
+  font-family: "OleoScriptSwashCaps-Bold", "Franklin Gothic Medium",
+    "Arial Narrow";
+  font-size: 4rem;
+  text-decoration: solid;
+  text-align: center;
+}
+#numerosColores {
+  background-color: #000000;
+  line-height: normal;
+}
+#iconoIzquierda {
+  padding-right: 10vw;
+  font-size: 1.5em;
+}
+#iconoDerecha {
+  padding-left: 10vw;
+  font-size: 1.5em;
+}
+.centrado {
+  background-color: #edc4b4;
+  /*min-width: 80vw;*/
+  display: block;
+  justify-content: center;
+}
+/*Botón*/
+.centrarBoton {
+  display: flex;
+  padding: 2vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #edc4b4;
+}
+.centrarBotonGrid {
+  display: flex;
+  padding: 2vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #edc4b4;
+}
+.centrarBotones {
+  display: flex;
+  padding-top: 2vh;
+  justify-content: center;
+}
+.centrarTextoGrid,
+.centrarTextoTurno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #edc4b4;
+  padding: 0;
+  margin: 0;
+  line-height: 250%;
+}
+.centrarTextoTurno {
+  min-height: 19vh;
+}
+.centrarConsejo {
+  display: flex;
+  text-align: center;
+  padding: 0.5vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #006400;
+  color: #ffffff;
+  line-height: 100%;
+  font-family: DancingScript, Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  min-height: 26vh;
+}
+.fa-solid:hover {
+  color: #006400;
+}
+.volverJugar {
+  background-color: #454545;
+  color: #ffffff;
+}
+.volverJugar:hover {
+  background-color: #006400;
+}
+#turno1,
+#turno2 {
+  display: flex;
+  text-align: center;
+  padding: 2vh;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  line-height: 100%;
+  font-family: DancingScript, Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  min-height: 5vh;
+  min-width: 5vw;
+  margin-top: 5vh;
+  border-radius: 30px;
+}
+#finalizar {
+  width: 15vw;
+  height: 10vh;
+  background-color: #ff0000;
+  color: #ffffff;
+  border-radius: 10px;
+}
+#finalizar:hover {
+  background-color: #006400;
+}
+#volverJugar {
+  align-self: center;
+}
+#centrarJugadas {
+  display: flex;
+  justify-content: center;
+}
+#botonIntentar {
+  font-size: 6vh;
+  background-color: #edc4b4;
+  border: none;
+}
+input {
+  height: 11vh;
+  width: 10vw;
+  color: #000000;
+  background-color: #ffffff;
+}
+input::-webkit-input-placeholder {
+  font-size: 4vh;
+  text-align: center;
+}
+input::-moz-placeholder {
+  font-size: 4vh;
+  text-align: center;
+}
+#respuesta {
+  font-size: 3em;
+}
+#numeroChequeado {
+  display: flex;
+  font-size: 5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monofett-Regular", "Courier New", "Arial";
+}
+#chequeoNumero {
+  display: flex;
+  font-size: 5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Monofett-Regular", "Courier New", "Arial";
+}
+#numerosColores,
+#malos,
+#buenos0,
+#buenos1,
+#buenos2,
+#buenos3,
+#buenos4,
+#buenos5,
+#buenos6,
+#buenos7,
+#buenos8,
+#buenos9,
+#malos0,
+#malos1,
+#malos2,
+#malos3,
+#malos4,
+#malos5,
+#malos6,
+#malos7,
+#malos8,
+#malos9,
+#regulares0,
+#regulares1,
+#regulares2,
+#regulares3,
+#regulares4,
+#regulares5,
+#regulares6,
+#regulares7,
+#regulares8,
+#regulares9 {
+  font-size: 3em;
+  font-family: "Monofett-Regular", "Courier New", "Arial";
+  text-align: center;
+  color: #000000;
+}
+.textoMalos {
+  font-size: 1.5vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#nombreJugador1,
+#nombreJugador2 {
+  height: 10vh;
+  width: 10vw;
+  background-color: #edc4b4;
+}
+#nombreJugador1::-webkit-input-placeholder,
+#nombreJugador2::-webkit-input-placeholder {
+  font-size: 1.5vw;
+  text-align: center;
+}
+#nombreJugador1::-moz-placeholder,
+#nombreJugador2::-moz-placeholder {
+  font-size: 1.5vw;
+  text-align: center;
+}
+#nombre1,
+#nombre2 {
+  font-size: 1.5vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 1vh;
+}
+span {
+  font-family: "OleoScriptSwashCaps-Bold", "Franklin Gothic Medium",
+    "Arial Narrow";
+  font-size: 1.5em;
+}
+.separarAbajo {
+  padding-bottom: 1vh;
+}
+.espacio {
+  padding: 0 10vh;
+}
+.espacio2 {
+  padding: 0 1vw;
+}
+.espacio3 {
+  padding-right: 1vw;
+}
+.botonSinpadding {
+  padding: 0;
+}
+#textoFacil {
+  font-family: "OleoScriptSwashCaps-Bold", "Franklin Gothic Medium",
+    "Arial Narrow";
+  font-size: 1.5em;
+}
+#minutos,
+#segundos,
+#reloj,
+#empezar {
+  font-family: calculator, Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  margin: 1vh;
+  background-color: #000000;
+  color: #ffd700;
+}
+#negro {
+  background-color: #000000;
+}
+#minutos,
+#segundos {
+  padding: 1vh;
+  font-size: 7vh;
+}
+#timer,
+#reloj {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #ffd700;
+}
+/*Footer*/
+.footer {
+  height: 1vh;
+  padding: 0;
+  margin: 1vh;
+  max-width: 90vw;
+}
+/*MediaQuery*/
+@media all and (max-width: 599px) {
+  .headerMaterias {
+    height: 10vh;
+  }
+  .linea {
+    font-size: 1.5em;
+  }
+  .lineasincursiva {
+    font-size: 1 em;
+  }
+  .animate__animated.animate__headShake {
+    font-size: 1em;
+  }
+  #tituloJuego {
+    font-size: 1.5rem;
+  }
+  #iconoIzquierda {
+    padding-right: 5vw;
+    font-size: 1em;
+  }
+  #iconoDerecha {
+    padding-left: 5vw;
+    font-size: 1em;
+  }
+  #botonIntentar {
+    font-size: 4vh;
+  }
+  input {
+    height: 6vh;
+    width: 30vw;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 0.7em;
+  }
+  input::-moz-placeholder {
+    font-size: 0.7em;
+  }
+  #numerosColores,
+  #malos,
+  #buenos0,
+  #buenos1,
+  #buenos2,
+  #buenos3,
+  #buenos4,
+  #buenos5,
+  #buenos6,
+  #buenos7,
+  #buenos8,
+  #buenos9,
+  #malos0,
+  #malos1,
+  #malos2,
+  #malos3,
+  #malos4,
+  #malos5,
+  #malos6,
+  #malos7,
+  #malos8,
+  #malos9,
+  #regulares0,
+  #regulares1,
+  #regulares2,
+  #regulares3,
+  #regulares4,
+  #regulares5,
+  #regulares6,
+  #regulares7,
+  #regulares8,
+  #regulares9 {
+    font-size: 2.5em;
+  }
+  #numeroChequeado {
+    font-size: 3em;
+  }
+  #chequeoNumero {
+    font-size: 3em;
+  }
+  span {
+    font-size: 0.8em;
+  }
+  #espacio {
+    padding: 0 1.5vh;
+  }
+  #tresColumnas {
+    grid-template-columns: 36vw 60vw;
+    grid-template-rows: 100vh 50v;
+    grid-gap: 0.5vw;
+  }
+  #cuatroColumnasfacil {
+    grid-template-columns: 35.5vw 59.5vw;
+    grid-gap: 0.5vw;
+  }
+  #centro {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+  #centroF {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+  #cuatroColumnasDos {
+    grid-template-columns: 27vw 34vw 34vw;
+  }
+  #centroD {
+    grid-column: 2 / 4;
+    grid-row: 1/2;
+  }
+  #izquierdaD {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #derechaD {
+    grid-row: 2/3;
+    grid-column: 2 / 3;
+  }
+  #masDerechaD {
+    grid-row: 2/3;
+    grid-column: 3 / 4;
+  }
+  #izquierda {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #izquierdaF {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #derechaF {
+    grid-row: 2/3;
+    grid-column: 1 / 2;
+  }
+  #derecha {
+    grid-row: 2/3;
+    grid-column: 1 / 3;
+  }
+  #masDerechaF {
+    grid-row: 2/3;
+    grid-column: 2 / 3;
+  }
+  #subrayado {
+    font-size: 0.5em;
+  }
+  #subrayado2 {
+    font-size: 1.4em;
+  }
+  .textoMalos {
+    font-size: 3vw;
+  }
+  #respuesta {
+    font-size: 2em;
+  }
+  .centrarConsejo {
+    padding: 0.5vh;
+    font-size: 3vh;
+    min-height: 18vh;
+  }
+  .centrarBotonGrid {
+    padding: 0.5vh 2vh;
+    background-color: #edc4b4;
+  }
+  .centrarTextoTurno {
+    min-height: 10vh;
+  }
+  #turno1,
+  #turno2 {
+    font-size: 2.5vh;
+    min-height: 5vh;
+    min-width: 5vw;
+    margin-top: 1vh;
+    border-radius: 30px;
+  }
+  #finalizar {
+    width: 35vw;
+    height: 15vh;
+    border-radius: 10px;
+  }
+  #nombreJugador1,
+  #nombreJugador2 {
+    height: 7vh;
+    width: 20vw;
+  }
+  #nombreJugador1::-webkit-input-placeholder,
+  #nombreJugador2::-webkit-input-placeholder {
+    font-size: 3vw;
+  }
+  #nombreJugador1::-moz-placeholder,
+  #nombreJugador2::-moz-placeholder {
+    font-size: 3vw;
+  }
+  #nombre1,
+  #nombre2 {
+    font-size: 3vw;
+    padding-top: 1vh;
+  }
+  .fa-arrows-rotate {
+    font-size: 3vh;
+  }
+  .volverJugar {
+    min-height: 10vh;
+  }
+  #minutos,
+  #segundos,
+  #reloj,
+  #empezar {
+    font-size: 3vh;
+    margin: 1vh;
+  }
+  /*Footer*/
+  .footer {
+    height: 1vh;
+    padding: 0;
+    margin: 1vh;
+    max-width: 90vw;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #tituloJuego {
+    font-size: 2rem;
+  }
+  .headerMaterias {
+    height: 10vh;
+  }
+  .linea {
+    font-size: 1.5em;
+  }
+  .lineasincursiva {
+    font-size: 1 em;
+  }
+  .animate__animated.animate__headShake {
+    font-size: 1em;
+  }
+  #iconoIzquierda {
+    padding-right: 5vw;
+    font-size: 1em;
+  }
+  #iconoDerecha {
+    padding-left: 5vw;
+    font-size: 1em;
+  }
+  #botonIntentar {
+    font-size: 5vh;
+  }
+  input {
+    height: 10vh;
+    width: 15vw;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 1em;
+  }
+  input::-moz-placeholder {
+    font-size: 1em;
+  }
+  #numerosColores,
+  #malos,
+  #buenos0,
+  #buenos1,
+  #buenos2,
+  #buenos3,
+  #buenos4,
+  #buenos5,
+  #buenos6,
+  #buenos7,
+  #buenos8,
+  #buenos9,
+  #malos0,
+  #malos1,
+  #malos2,
+  #malos3,
+  #malos4,
+  #malos5,
+  #malos6,
+  #malos7,
+  #malos8,
+  #malos9,
+  #regulares0,
+  #regulares1,
+  #regulares2,
+  #regulares3,
+  #regulares4,
+  #regulares5,
+  #regulares6,
+  #regulares7,
+  #regulares8,
+  #regulares9 {
+    font-size: 2.5em;
+  }
+  #numeroChequeado {
+    font-size: 4em;
+  }
+  #chequeoNumero {
+    font-size: 4em;
+  }
+  span {
+    font-size: 1.4em;
+  }
+  #espacio {
+    padding: 0 1.5vh;
+  }
+  #tresColumnas {
+    display: grid;
+    grid-template-columns: 36vw 60vw;
+    grid-template-rows: 100vh 50v;
+    grid-gap: 1vw;
+  }
+  #centro {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+  #izquierda {
+    display: grid;
+    background-color: #000000;
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #derecha {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1 / 3;
+  }
+  #cuatroColumnasfacil {
+    grid-template-columns: 36vw 60vw;
+    grid-gap: 1vw;
+  }
+  #centroF {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+  #izquierdaF {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #derechaF {
+    grid-row: 2/3;
+    grid-column: 1 / 2;
+  }
+  #masDerechaF {
+    grid-row: 2/3;
+    grid-column: 2 / 3;
+  }
+  #cuatroColumnasDos {
+    grid-template-columns: 28vw 33vw 33vw;
+  }
+  #centroD {
+    grid-column: 2 / 4;
+    grid-row: 1/2;
+  }
+  #izquierdaD {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #derechaD {
+    grid-row: 2/3;
+    grid-column: 2 / 3;
+  }
+  #masDerechaD {
+    grid-row: 2/3;
+    grid-column: 3 / 4;
+  }
+  input {
+    height: 6vh;
+    width: 15vw;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 2vh;
+  }
+  input::-moz-placeholder {
+    font-size: 2vh;
+  }
+  #respuesta {
+    font-size: 3em;
+  }
+  .textoMalos {
+    font-size: 3vw;
+  }
+  #subrayado,
+  #subrayado2 {
+    font-size: 1em;
+  }
+  #respuesta {
+    font-size: 3em;
+  }
+  #nombreJugador1,
+  #nombreJugador2 {
+    height: 5vh;
+    width: 15vw;
+  }
+  #nombreJugador1::-webkit-input-placeholder,
+  #nombreJugador2::-webkit-input-placeholder {
+    font-size: 2vw;
+  }
+  #nombreJugador1::-moz-placeholder,
+  #nombreJugador2::-moz-placeholder {
+    font-size: 2vw;
+  }
+  #nombre1,
+  #nombre2 {
+    font-size: 3vw;
+  }
+  span {
+    font-size: 2em;
+  }
+  #consejo {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  .centrarBotonGrid {
+    padding: 0.5vh 2vh;
+    background-color: #edc4b4;
+  }
+  #subrayado2 {
+    font-size: 3.5em;
+  }
+  #turno1,
+  #turno2 {
+    padding: 0.5vh;
+    line-height: 100%;
+    font-size: 2vh;
+    min-height: 2vh;
+    min-width: 3vw;
+    margin-top: 0vh;
+  }
+  #finalizar {
+    width: 15vw;
+    height: 10vh;
+  }
+  #numerosColores,
+  #malos,
+  #buenos0,
+  #buenos1,
+  #buenos2,
+  #buenos3,
+  #buenos4,
+  #buenos5,
+  #buenos6,
+  #buenos7,
+  #buenos8,
+  #buenos9,
+  #malos0,
+  #malos1,
+  #malos2,
+  #malos3,
+  #malos4,
+  #malos5,
+  #malos6,
+  #malos7,
+  #malos8,
+  #malos9,
+  #regulares0,
+  #regulares1,
+  #regulares2,
+  #regulares3,
+  #regulares4,
+  #regulares5,
+  #regulares6,
+  #regulares7,
+  #regulares8,
+  #regulares9 {
+    font-size: 3.5em;
+  }
+  .centrarTextoTurno {
+    min-height: 5vh;
+  }
+
+  #minutos,
+  #segundos,
+  #reloj,
+  #empezar {
+    font-size: 2.5vh;
+    margin: 1vh;
+  }
+  /*Footer*/
+  .footer {
+    height: 1vh;
+    padding: 0;
+    margin: 1vh;
+    max-width: 90vw;
+  }
+  .iconosfooter {
+    font-size: 1.5vw;
+  }
+  .iconosfooter2 {
+    font-size: 1.5vw;
+  }
+}

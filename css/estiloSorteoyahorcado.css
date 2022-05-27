@@ -1,0 +1,1136 @@
+@font-face {
+  font-family: Rye-Regular;
+  src: url(../fonts/Rye-Regular.ttf);
+}
+@font-face {
+  font-family: OleoScriptSwashCaps-Bold;
+  src: url(../fonts/OleoScriptSwashCaps-Bold.ttf);
+}
+@font-face {
+  font-family: Monofett-Regular;
+  src: url(../fonts/Monofett-Regular.ttf);
+}
+@font-face {
+  font-family: DancingScript;
+  src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+/*navbar*/
+.headerMaterias {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #000000;
+  color: #ffffff;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+.linea {
+  display: flex;
+  flex: 2 1 auto;
+  font-family: Rye-Regular, "Times New Roman", Times, serif;
+  justify-content: center;
+  font-size: 2.5em;
+  text-align: center;
+}
+.lineasincursiva {
+  display: flex;
+  flex: 1 1 auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10vh;
+}
+.animate__animated.animate__headShake {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  animation-iteration-count: infinite;
+}
+.nav-link {
+  font-weight: bold;
+}
+/*Fin header*/
+section,
+aside,
+footer {
+  margin: 1vh 1vh 0vh 1vh;
+}
+#otro_color{
+  background-color: #ff0000;
+}
+.dosColumnas {
+  background-color: #edc4b4;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: 49.5vw 49.5vw;
+  grid-gap: 0vw;
+}
+section {
+  max-width: 100vw;
+}
+#cuatroColumnasAhorcado {
+  display: grid;
+  grid-template-columns: 19vw 25vw 25vw 25vw;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 0.5vw;
+  background-color: #efe4b0;
+}#cuatroColumnasAhorcado_color {
+  display: grid;
+  grid-template-columns: 19vw 25vw 25vw 25vw;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 0.5vw;
+  background-color: #edc4b4;
+}
+#columna1Ahorcado,
+#columna1Ahorcado_elegir {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+#columna1AhorcadoFila2,
+#columna1AhorcadoFila2_elegir {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#columna2Ahorcado,
+#columna2Ahorcado_elegir {
+  display: grid;
+  grid-column: 2 / 5;
+  grid-row: 1/2;
+  background-color: #008000;
+  border-radius: 20px;
+  margin-top: 1vh;
+}
+#columna2AhorcadoFila2,
+#columna2AhorcadoFila2_elegir {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 2/3;
+}
+#columna4AhorcadoFila2,
+#columna4AhorcadoFila2_elegir {
+  display: grid;
+  grid-column: 4/ 5;
+  grid-row: 2/3;
+}
+#columna2AhorcadoFila3,
+#columna2AhorcadoFila3_elegir {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 3/4;
+}
+#columna2AhorcadoFila4,
+#columna2AhorcadoFila4_elegir {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 4/5;
+}
+#formAhorcado {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+#ocultar_teclado,
+#mostrar_teclado {
+  max-width: 50vw;
+  max-height: 12vh;
+  border-radius: 10px;
+  background-color: #f98455;
+  color: #000000;
+  margin: 1vh;
+  text-align: center;
+  cursor: pointer;
+}
+#teclado1 {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+}
+#teclado2 {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2/3;
+}
+#teclado3 {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 3/4;
+}
+#articleLetras {
+  grid-column: 2 / 3;
+  grid-row: 2/3;
+}
+
+#tresColumnasPiedra {
+  display: grid;
+  grid-template-columns: 24vw 35.5vw 35.5vw;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 1vw;
+  background-color: #edc4b4;
+}
+#tituloJuego {
+  font-family: "OleoScriptSwashCaps-Bold", "Franklin Gothic Medium",
+    "Arial Narrow";
+  font-size: 4rem;
+  text-decoration: solid;
+  text-align: center;
+}
+#subtituloJuego {
+  font-family: "OleoScriptSwashCaps-Bold", "Franklin Gothic Medium",
+    "Arial Narrow";
+  font-size: 2rem;
+  text-decoration: solid;
+  text-align: center;
+}
+#articleAhorcado {
+  margin: 0 1vh;
+  background-color: #edc4b4;
+}
+#articlePalabra {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+  background-color: #008000;
+  border-radius: 20px;
+  margin-top: 1vh;
+}
+#articlePiedra1 {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+  border-radius: 20px;
+  margin-top: 1vh;
+  padding: 2vh;
+  background-color: #778899;
+}
+#articlePiedra2 {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 1/2;
+  border-radius: 20px;
+  margin-top: 1vh;
+  background-color: #778899;
+  padding: 2vh;
+}
+#articlePiedra3 {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 2/3;
+  border-radius: 20px;
+  margin-top: 1vh;
+  background-color: #778899;
+  padding: 2vh;
+}
+#articlePiedra4 {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 4/5;
+  border-radius: 20px;
+  margin-top: 1vh;
+  padding: 2vh;
+  margin: 1vh;
+}
+#articlePiedra5 {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 5/6;
+  border-radius: 20px;
+  margin-top: 1vh;
+  padding: 2vh;
+  margin: 1vh;
+}
+.botonPpt {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 2vh;
+  margin: 1vh;
+}
+.botonPpt2 {
+  color: #ffffff;
+  background-color: #f98455;
+  border-radius: 20px;
+  padding: 2vh;
+  margin: 1vh;
+}
+#nro_ganadas {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  width: 20em;
+  font-size: 1.5em;
+  margin: 0 1em;
+  background-color: #ffa07a;
+}
+#nro_ganadas2 {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  width: 5em;
+  font-size: 1.5em;
+  margin: 0 1em;
+  background-color: #ffa07a;
+}
+#articulo1 {
+  display: grid;
+  text-align: center;
+  min-height: 50vh;
+}
+#articulo2 {
+  display: grid;
+  text-align: center;
+  min-height: 50vh;
+}
+#articulo3 {
+  display: grid;
+  text-align: center;
+  grid-column: 1 / 3;
+}
+#articulo1S{
+  display: grid;
+  text-align: center;
+  min-height: 50vh;
+}
+#articulo2S{
+  display: grid;
+  text-align: center;
+  min-height: 50vh;
+}
+#articulo3S{
+  display: grid;
+  text-align: center;
+  grid-column: 1 / 3;
+}
+.divCentrar {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.divCentrarPpt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.divCentrarMax {
+  display: block;
+  justify-self: center;
+  text-align: center;
+  max-width: 80vw;
+  margin: 1vh 5vw;
+}
+.veinticinco_jugadores {
+  display: flex;
+  align-self: center;
+}
+
+.divCentrarAhorcado {
+  display: flex;
+  justify-content: center;
+  background-color: #707070;
+  justify-self: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.letritas {
+  font-family: Monofett-Regular, Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  height: 1.5em;
+  width: 1.4em;
+  background-color: #ffa07a;
+  border-radius: 10px;
+  margin: 0.1vw;
+  cursor: pointer;
+}
+.letritas:hover {
+  /*  font-size: 3em;*/
+  color: #008000;
+  cursor: pointer;
+}
+#probar {
+  font-size: 2em;
+  margin: 0 0.5em;
+  background-color: #ffa07a;
+}
+#probar3 {
+  margin: 2vh;
+  width: 10em;
+  height: 10vh;
+  font-size: 2em;
+  color: #ffffff;
+  background-color: #000000;
+}
+#palabraEscrita {
+  margin: 2vh;
+  width: 10em;
+  height: 10vh;
+  font-size: 2em;
+  background-color: #999999;
+}
+#letrasNo {
+  font-family: Monofett-Regular, Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  color: #ff0000;
+}
+#probar2 {
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #008000;
+  color: #ffffff;
+  margin: 2vh;
+  text-align: center;
+  cursor: pointer;
+}
+#probar4 {
+  width: 20em;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #008000;
+  color: #ffffff;
+  margin: 2vh 1vh;
+  text-align: center;
+  cursor: pointer;
+}
+#probar5 {
+  width: 15em;
+  height: 10vh;
+  border-radius: 10px;
+  background-color: #008000;
+  color: #ffffff;
+  margin: 2vh 1vh;
+  text-align: center;
+  cursor: pointer;
+}
+#imprimirPalabra {
+  font-family: Monofett-Regular, Arial, Helvetica, sans-serif;
+  font-size: 6em;
+  background-color: #008000;
+}
+#tituloLargo {
+  min-width: 90vw;
+  font-size: 6vh;
+}
+.elegirAlumnos {
+  min-width: 20vw;
+  min-height: 10vh;
+  font-size: 0.8em;
+  margin: 1vh;
+  border-radius: 10px;
+  background-color: #f98455;
+}
+.botonesMafia {
+  background-color: #808080;
+  color: #ffffff;
+  margin: 2vh 0.5vh;
+  min-width: 15vw;
+  min-height: 10vh;
+  font-size: 3.5vh;
+  border-radius: 10px;
+  font-family: DancingScript, "Courier New", Courier, monospace;
+}
+#dios,
+#medicos,
+#ladrones,
+#policias,
+#paisanos {
+  font-size: 4vh;
+}
+#pizarron {
+  background-color: #008000;
+  color: #ffffff;
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  font-size: 3vh;
+  min-width: 50vw;
+  max-width: 80vw;
+}
+img {
+  max-width: 100%;
+}
+#pantalla {
+  width: 3em;
+  font-size: 2em;
+  margin: 0 0.5em;
+}
+#respuesta {
+  font-size: 9vh;
+}
+input {
+  width: 10vw;
+  height: 10vh;
+}
+#botonIntentar {
+  height: 10vh;
+  font-size: 6vh;
+  background-color: #edc4b4;
+  border: none;
+}
+.volverJugar {
+  height: 10vh;
+  background-color: #ffa07a;
+  margin: 1vh;
+}
+.volverJugar2 {
+  background-color: #ffa07a;
+  margin: 1vh;
+}
+
+.espacio2 {
+  padding: 0 1vw;
+}
+h2 {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  font-size: 2.5em;
+  background-color: #000000;
+  color: #ffffff;
+}
+h3 {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  font-size: 2em;
+  max-width: 80vw;
+}
+#piedra_derecha_elegir,
+#tijera_derecha_elegir,
+#papel_derecha_elegir,
+#pregunta_inicial {
+  font-size: 20vh;
+}
+#piedra_derecha_elegir:hover,
+#tijera_derecha_elegir:hover,
+#papel_derecha_elegir:hover {
+  color: #008000;
+}
+#piedra_izquierda,
+#tijera_izquierda,
+#papel_izquierda,
+#piedra_derecha,
+#tijera_derecha,
+#papel_derecha,
+#pregunta_inicial {
+  font-size: 20vh;
+}
+.ppt {
+  border: none;
+  background-color: #778899;
+}
+#piedra_izquierda {
+  transform: rotate(90deg);
+}
+#tijera_izquierda {
+  transform: scaleX(-1);
+}
+#piedra_derecha,
+#piedra_derecha_elegir {
+  transform: rotate(270deg) scaleX(-1);
+}
+#papel_derecha,
+#papel_derecha_elegir {
+  transform: scaleX(-1);
+}
+.letras_ppt {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  font-size: 250%;
+}
+.elegirAlumnos {
+  min-width: 20vw;
+  min-height: 10vh;
+  font-size: 2em;
+}
+
+/*Footer*/
+.footer {
+  height: 1vh;
+  padding: 0;
+  margin: 1vh;
+  max-width: 90vw;
+}
+/*MediaQuery*/
+@media all and (max-width: 599px) {
+  .headerMaterias {
+    height: 10vh;
+  }
+  .linea {
+    font-size: 1.5em;
+  }
+  .lineasincursiva {
+    font-size: 1 em;
+  }
+  .animate__animated.animate__headShake {
+    font-size: 1em;
+  }
+  #tituloJuego {
+    font-size: 1.5rem;
+  }
+  #subtituloJuego {
+    font-size: 0.75rem;
+  }
+  #cuatroColumnasAhorcado {
+    display: grid;
+    grid-template-columns: 47vw 47vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  #cuatroColumnasAhorcado_color {
+    display: grid;
+    grid-template-columns: 47vw 47vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  #columna2Ahorcado {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+  }
+  #columna1AhorcadoFila2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  #columna4AhorcadoFila2 {
+    grid-column: 1/ 3;
+    grid-row: 3 / 4;
+  }
+  #columna2AhorcadoFila2 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+  #columna1Ahorcado {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+  }
+  #columna2AhorcadoFila3 {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+  }
+  #columna2Ahorcado_elegir {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  #columna2AhorcadoFila2_elegir {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  #columna4AhorcadoFila2_elegir {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  #columna2AhorcadoFila3_elegir {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+  #columna1AhorcadoFila2_elegir {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+  }
+  #columna1Ahorcado_elegir {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  #probar3,
+  #palabraEscrita {
+    margin: 0.5vh;
+    width: 8em;
+    height: 6vh;
+    font-size: 1em;
+  }
+  #columna2AhorcadoFila4_elegir {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+  }
+  .letritas {
+    font-size: 2.5em;
+    height: 1.7em;
+    width: 1.5em;
+    margin: 0.1vw;
+  }
+  #Q,
+  #W,
+  #E,
+  #R,
+  #T,
+  #Y,
+  #U,
+  #I,
+  #O,
+  #P,
+  #A,
+  #S,
+  #D,
+  #F,
+  #G,
+  #H,
+  #J,
+  #K,
+  #L,
+  #Ñ,
+  #Z,
+  #X,
+  #C,
+  #V,
+  #B,
+  #N,
+  #M {
+    height: 1.5em;
+    width: 1.1em;
+    padding: 0;
+    margin: 0;
+  }
+  #ocultar_teclado,
+  #mostrar_teclado {
+    min-width: 50vw;
+    max-width: 50vw;
+    max-height: 12vh;
+  }
+  #dosColumnasAhorcado {
+    display: grid;
+    grid-template-columns: 96vw;
+    grid-template-rows: auto auto auto auto;
+  }
+  #formAhorcado {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  #articlePalabra {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    background-color: #008000;
+  }
+  #articleLetras {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+  }
+  .dosColumnas {
+    display: grid;
+    grid-template-columns: 99vw;
+    grid-gap: 2vw;
+  }
+  #respuesta {
+    font-size: 5vh;
+  }
+  input {
+    height: 6vh;
+    width: 15vw;
+  }
+  #botonIntentar {
+    height: 6vh;
+    font-size: 4vh;
+  }
+  .letritas {
+    height: 1.7em;
+    font-size: 1.5em;
+    width: 1.5em;
+  }
+  #probar {
+    width: 4em;
+    height: 3em;
+    font-size: 1.5em;
+  }
+  #letrasNo {
+    font-size: 2.5em;
+  }
+  #probar2 {
+    width: 20em;
+    height: 10vh;
+    border-radius: 10px;
+  }
+  #probar4 {
+    width: 15em;
+    height: 8vh;
+    border-radius: 10px;
+  }
+  #imprimirPalabra {
+    font-size: 3em;
+  }
+  img {
+    max-height: 20vh;
+  }
+  #pantalla {
+    width: 3em;
+    font-size: 2em;
+    margin: 0 0.5em;
+  }
+  .volverJugar {
+    min-height: 5vh;
+    margin: 1vh;
+  }
+  #alumno1,
+  #alumno2,
+  #alumno3,
+  #alumno4,
+  #alumno5 {
+    width: 30px;
+    height: 10px;
+  }
+  .elegirAlumnos {
+    min-width: 20vw;
+    min-height: 10vh;
+    font-size: 0.8em;
+  }
+  #tresColumnasPiedra {
+    grid-template-columns: 48vw 48vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  #horca {
+    grid-column: 1 / 3;
+    grid-row: 5/6;
+  }
+  #articlePiedra1 {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #piedra_izquierda,
+  #tijera_izquierda,
+  #papel_izquierda,
+  #piedra_derecha,
+  #tijera_derecha,
+  #papel_derecha,
+  #pregunta_inicial {
+    font-size: 4em;
+  }
+  #piedra_derecha_elegir,
+  #tijera_derecha_elegir,
+  #papel_derecha_elegir,
+  #pregunta_inicial {
+    font-size: 4em;
+  }
+  .botonPpt,
+  .botonPpt2 {
+    padding: 0.5vh;
+    margin: 0.5vh;
+  }
+  #articlePiedra2 {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+  #articlePiedra3 {
+    grid-column: 1 / 3;
+    grid-row: 2/3;
+  }
+  #articlePiedra4 {
+    grid-column: 1 / 3;
+    grid-row: 3/4;
+  }
+  #articlePiedra5 {
+    grid-column: 1 / 3;
+    grid-row: 6/7;
+  }
+  .letras_ppt {
+    font-family: DancingScript, "Courier New", Courier, monospace;
+    font-size: 100%;
+  }
+  #nro_ganadas {
+    width: 12em;
+    font-size: 0.5em;
+  }
+  #articulo1S{
+    grid-row: 1/2;
+  }
+  #articulo2S{
+    grid-row: 2/3;
+  }
+  #articulo3S{
+    grid-row: 3/4;
+  }
+  
+  /*Footer*/
+  .footer {
+    height: 1vh;
+    padding: 0;
+    max-width: 90vw;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1050px) {
+  .headerMaterias {
+    height: 10vh;
+  }
+  .linea {
+    font-size: 1.5em;
+  }
+  .lineasincursiva {
+    font-size: 1 em;
+  }
+  .animate__animated.animate__headShake {
+    font-size: 1em;
+  }
+  #tituloJuego {
+    font-size: 2rem;
+  }
+  #subtituloJuego {
+    font-size: 1rem;
+  }
+  #cuatroColumnasAhorcado {
+    display: grid;
+    grid-template-columns: 47vw 47vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  #cuatroColumnasAhorcado_color {
+    display: grid;
+    grid-template-columns: 47vw 47vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  #columna2Ahorcado {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+  }
+  #columna1AhorcadoFila2 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  #columna4AhorcadoFila2 {
+    grid-column: 1/ 3;
+    grid-row: 3 / 4;
+  }
+  #columna2AhorcadoFila2 {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+  #columna1Ahorcado {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+  }
+  #columna2AhorcadoFila3 {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+  }
+  #columna2AhorcadoFila3_elegir {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+  }
+  #columna2AhorcadoFila4_elegir {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 6 / 7;
+  }
+  #columna2Ahorcado_elegir {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  #columna2AhorcadoFila2_elegir {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+  #columna4AhorcadoFila2_elegir {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  #columna2AhorcadoFila3_elegir {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+  }
+  #columna1AhorcadoFila2_elegir {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+  }
+  #columna1Ahorcado_elegir {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+  }
+  #probar3,
+  #palabraEscrita {
+    margin: 0.5vh;
+    width: 10em;
+    height: 8vh;
+    font-size: 1.5em;
+  }
+  #columna2AhorcadoFila4_elegir {
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
+  }
+  .letritas {
+    height: 1.7em;
+    font-size: 2.5em;
+    width: 1.5em;
+    margin: 0.1vw;
+  }
+  #Q,
+  #W,
+  #E,
+  #R,
+  #T,
+  #Y,
+  #U,
+  #I,
+  #O,
+  #P,
+  #A,
+  #S,
+  #D,
+  #F,
+  #G,
+  #H,
+  #J,
+  #K,
+  #L,
+  #Ñ,
+  #Z,
+  #X,
+  #C,
+  #V,
+  #B,
+  #N,
+  #M {
+    height: 2.4em;
+    width: 2em;
+    padding: 0;
+    margin: 0;
+  }
+  #ocultar_teclado,
+  #mostrar_teclado {
+    min-width: 50vw;
+    max-width: 50vw;
+    max-height: 12vh;
+  }
+  .dosColumnas {
+    display: grid;
+    grid-template-columns: 99vw;
+    grid-template-rows: auto auto auto;
+    grid-gap: 2vw;
+  }
+  #respuesta {
+    font-size: 5vh;
+  }
+  input {
+    font-size: 5vh;
+    height: 6vh;
+    width: 15vw;
+  }
+  #botonIntentar {
+    height: 6vh;
+    font-size: 5vh;
+  }
+  #dosColumnasAhorcado {
+    display: grid;
+    grid-template-columns: 96vw;
+    grid-template-rows: auto auto auto auto;
+  }
+  #formAhorcado {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #articlePalabra {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    background-color: #008000;
+  }
+  #articlePiedra {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    background-color: #778899;
+  }
+  #articleLetras {
+    grid-column: 1 / 2;
+    grid-row: 2/3;
+  }
+  .letritas {
+    height: 2.3em;
+    font-size: 2em;
+    width: 2em;
+  }
+  #probar {
+    height: 3em;
+    width: 5em;
+    font-size: 2em;
+  }
+  #letrasNo {
+    font-size: 3em;
+  }
+  #probar2 {
+    width: 25em;
+    height: 15vh;
+    margin: 2vh;
+  }
+  #probar4 {
+    width: 18em;
+    height: 10vh;
+    margin: 2vh;
+  }
+  #imprimirPalabra {
+    font-size: 4em;
+  }
+  img {
+    max-height: 30vh;
+  }
+  #pantalla {
+    width: 3.5em;
+    font-size: 2.5em;
+  }
+  .volverJugar {
+    min-height: 57vh;
+    margin: 1vh;
+  }
+  .elegirAlumnos {
+    min-width: 20vw;
+    min-height: 10vh;
+    font-size: 1.3em;
+  }
+  #tresColumnasPiedra {
+    grid-template-columns: 48vw 48vw;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  #horca {
+    grid-column: 1 / 3;
+    grid-row: 5/6;
+  }
+  #articlePiedra1 {
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+  }
+  #piedra_izquierda,
+  #tijera_izquierda,
+  #papel_izquierda,
+  #piedra_derecha,
+  #tijera_derecha,
+  #papel_derecha,
+  #pregunta_inicial {
+    font-size: 8em;
+  }
+  #piedra_derecha_elegir,
+  #tijera_derecha_elegir,
+  #papel_derecha_elegir,
+  #pregunta_inicial {
+    font-size: 8em;
+  }
+  .botonPpt,
+  .botonPpt2 {
+    padding: 1vh;
+    margin: 1vh;
+  }
+  #articlePiedra2 {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+  #articlePiedra3 {
+    grid-column: 1 / 3;
+    grid-row: 2/3;
+  }
+  #articlePiedra4 {
+    grid-column: 1 / 3;
+    grid-row: 3/4;
+  }
+  #articlePiedra5 {
+    grid-column: 1 / 3;
+    grid-row: 6/7;
+  }
+  .letras_ppt {
+    font-family: DancingScript, "Courier New", Courier, monospace;
+    font-size: 130%;
+  }
+  #nro_ganadas {
+    width: 14em;
+    font-size: 1.3em;
+  }
+
+  /*Footer*/
+  .footer {
+    height: 1vh;
+    padding: 0;
+    max-width: 90vw;
+  }
+  .iconosfooter {
+    font-size: 1.5vw;
+  }
+  .iconosfooter2 {
+    font-size: 1.5vw;
+  }
+}

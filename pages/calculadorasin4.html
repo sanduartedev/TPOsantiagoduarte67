@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <Link rel="stylesheet" type="text/css" href="../css/calculadoraestilos.css" media="all">
+    <title>Calculadora sin la tecla 4</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="64x64">
+</head>
+<header>
+    <div class="linea">Ejercicios para usar la calculadora   |   </div>
+    <ul>Calculadoras de <br> uso escolar</ul>
+</header>
+<body>
+    <!-- Empieza código calculadora sin 4 -->
+    <section class="paginasdecalculadoras">
+        <form name="calculadora">
+            <p class="nombrecalcu">CALCULADORA SIN 4</p>
+            <input class="pantallacompleta" type="textfield" name="respuesta" value="">
+            
+            <input class="borrar" type="reset" value="C">
+            <input class="simbolos" type="button" value="(" onClick="respuesta.value+='('">
+            <input class="simbolos" type="button" value=")" onClick="respuesta.value+=')'">
+            <input class="signos" type="button" value="/" onClick="respuesta.value+='/'">
+            <input class="pi" type="button" value="π" onClick="respuesta.value+='3.1415926535897932384626433'">
+            
+            <input class="numeros" type="button" value="7" onClick="respuesta.value+='7'">
+            <input class="numeros" type="button" value="8" onClick="respuesta.value+='8'">
+            <input class="numeros" type="button" value="9" onClick="respuesta.value+='9'">
+            <input class="signos" type="button" value="+" onClick="respuesta.value+='+'">
+            <input class="simbolos" type="button" value="%" onClick="respuesta.value+='/100*'">
+            
+            <input class="botoneliminado" type="button" value=" " onClick="respuesta.value+=''">
+            <input class="numeros" type="button" value="5" onClick="respuesta.value+='5'">
+            <input class="numeros" type="button" value="6" onClick="respuesta.value+='6'">
+            <input class="signos" type="button" value="-" onClick="respuesta.value+='-'">
+            <input class="simbolos" type="button" value="R" onClick="respuesta.value+='%'">
+            
+            <input class="numeros" type="button" value="1" onClick="respuesta.value+='1'">
+            <input class="numeros" type="button" value="2" onClick="respuesta.value+='2'">
+            <input class="numeros" type="button" value="3" onClick="respuesta.value+='3'">
+            <input class="signos" type="button" value="x" onClick="respuesta.value+='*'">
+            <input class="simbolos" type="button" value="Exp" onClick="respuesta.value+='**'">
+            
+            <input class="simbolos" type="button" value="," onClick="respuesta.value+='.'">
+            <input class="numeros" type="button" value="0" onClick="respuesta.value+='0'">
+            <input class="borrar" type="button" value="←" onClick="respuesta.value=respuesta.value.substring(0, respuesta.value.length -1)">
+            
+            
+            <input class="igual" type="button" value="=" onClick="respuesta.value=eval(respuesta.value)">
+            
+        </form>
+    </section>
+    <!-- Finaliza código de calculadora sin 4 -->
+    <footer class="footerCalculadoraEjercicios">
+        <p class="iconosfooter2"><div class="volver"><a href="../pages/calculadoraPrincipal.html"><i class="fa-solid fa-calculator fa-2x"></i></div></p>
+    </footer>
+</body>
+</html>

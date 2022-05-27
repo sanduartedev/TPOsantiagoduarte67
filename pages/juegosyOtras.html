@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+  <link rel="stylesheet" href="../css/estilobootstrap.css" media="all">
+  <link rel="icon" type="image/png" href="../img/favicon.jpg" sizes="64x64">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+  <title>Juegos y más</title>
+</head>
+
+<body>
+  <div class="fixed-top"></div>
+  <header class="headerMaterias">
+    <div class="linea">EGR 2022</div>
+    <span class="lineasincursiva">|</span>
+    <div class="animate__animated animate__headShake">Juegos y otras</div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa07a;">
+    <a class="navbar-brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Página Principal</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Páginas de actividades</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../pages/practicasDelLenguaje.html">Prácticas del Lenguaje</a>
+            <a class="dropdown-item" href="../pages/matematica.html">Matemática</a>
+            <a class="dropdown-item" href="../pages/cienciasSociales.html">Ciencias Sociales</a>
+            <a class="dropdown-item" href="../pages/cienciasNaturales.html">Ciencias Naturales</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="../pages/eljuegodelNumerito.html">El juego del numerito</a>
+            <a class="dropdown-item" href="../pages/composicion.html">La historia de San Martín</a>
+            <a class="dropdown-item" href="../pages/botellasDeAmor.html">Botellas de amor</a>
+            <a class="dropdown-item" href="../pages/sorteoAlumnos.html">Orden de alumnos</a>
+            <a class="dropdown-item" href="../pages/sorteoMafia.html">Sorteo Mafia</a>
+            <a class="dropdown-item" href="../pages/piedra_papel_tijera.html">Piedra, papel o tijera</a>
+            <a class="dropdown-item" href="../pages/ahorcado.html">Ahorcado</a>
+
+          </div>
+        </li>
+        <ul>
+    </div>
+  </nav>
+  </div>
+  <div id="carrusel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="../pages/composicion.html"><img src="../img/borrador2.jpg" alt="Composición" width="110"
+              height="50"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="../pages/eljuegodelNumerito.html"><img src="../img/eljuegodelnumerito.jpg" alt="Numerito" width="110"
+              height="50"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="../pages/botellasDeAmor.html"><img src="../img/botellas_amor.jpg" alt="Botellas"
+              width="110" height="50"></a>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Antes</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+    <hr>
+    <div class="alert alert-danger" role="alert" style="background-color: #f84c08;">Varios</div>
+    <div id="cartas" class="card-group">
+      <div class="card" style="background-color: #ffa07a;">
+        <a href="../pages/sorteoAlumnos.html"><img class="card-img-top" src="../img/favicon5.jpg" alt="bolillero"></a>
+        <div class="card-body">
+          <a href="../pages/sorteoAlumnos.html">
+            <h5 class="card-title">Sorteos</h5>
+          </a>
+          <p class="card-text">Podés sortear entre el grado, armar las parejas para sentarnos o repartir los roles para jugara al Mafia</p>
+        </div>
+      </div>
+      <div class="card" style="background-color: #ffa07a;">
+        <a href="../pages/piedra_papel_tijera.html"><img class="card-img-top" src="../img/favicon7.jpg" alt="piedra"></a>
+        <div class="card-body">
+          <a href="../pages/piedra_papel_tijera.html">
+            <h5 class="card-title">Piedra, papel o tijera</h5>
+          </a>
+          <p class="card-text">Vence a tu rival en esta nueva versión</p>
+        </div>
+      </div>
+      <div class="card" style="background-color: #ffa07a;">
+        <a href="../pages/ahorcado.html"><img class="card-img-top" src="../img/ahorcadologo.jpg" alt="ahorcado"></a>
+        <div class="card-body">
+          <a href="../pages/ahorcado.html">
+            <h5 class="card-title">Ahorcado</h5>
+          </a>
+          <p class="card-text">El popular juego en versión EGR con dibujos de Valeria, Azul y Valentín. Incluye un modo para jugar con primer grado</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div id="fondoBotones">
+    <div class="centrarBoton">
+      <div id="vida" class="alert alert-danger" role="alert" style="background-color: #f84c08;">Todas las respuestas que
+        necesitas para ser feliz en la vida</div>
+    </div>
+    <div class="centrarBoton">
+      <p id="vida" class="alert alert-danger" role="alert" style="background-color: #008000;">¿Eres hincha de Ferro?</p>
+    </div>
+    <article id="articleBotones">
+      <div class="centrarBoton">
+        <button id="botonVida2" type="button" class="btn btn-primary" data-toggle="modal"
+          data-target="#exampleModalLong" visibility="visibility" onClick="mejorado()">NO</button>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+          aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Actualización</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">Tu nueva versión 2.0 es hincha de Ferro. Ahora serás feliz. ¡Felicitaciones!</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="centrarBoton">
+        <a href="https://laferropedia.com/" target="_blank"><button id="botonVida" type="button"
+            class="btn btn-primary">SÍ</button></a>
+      </div>
+  </div>
+  </article>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- Button trigger modal -->
+  <div class="centrarBoton">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#notificacion"
+      style="background-color: #ffa07a;">Ver Notificación</button>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="notificacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Importante</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Recuerden traer fotocopia del DNI y partida de nacimiento del alumno/a antes del 31/5
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="background-color: #ffa07a;"
+            data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center text-white" style="background-color: #ffa07a;">
+    <div class="container pt-1">
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="https://www.facebook.com/profile.php?id=100079688658308&sk=about" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/septimoesc24de8" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:septimoesc24de8@gmail.com" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com/esc24de8" role="button"
+        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  <script src="../JS/Modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,702 @@
+/* Para importar tipos de letras*/
+@font-face {
+  font-family: calculator;
+  src: url(../fonts/Calculator.ttf);
+}
+@font-face {
+  font-family: random;
+  src: url(../fonts/RandomBoys.otf);
+}
+/* Header fijo en todas las páginas*/
+header {
+  background: #888888;
+  color: #ffffff;
+  min-height: 5vh;
+  max-height: 10vh;
+  text-align: center;
+  width: 100%;
+  margin: 0 vh 0 vh 0.5vh;
+  position: relative;
+  font-family: random, Arial, Helvetica, sans-serif;
+}
+.linea {
+  font-size: 3.8vh;
+}
+ul {
+  font-size: 2vh;
+}
+.linea,
+ul {
+  display: inline-block;
+  vertical-align: center;
+}
+/* Fin Header fijo en todas las páginas */
+/* Menú desplegable del index*/
+.botonmenu {
+  background-color: #f19a0b;
+  font-size: 3vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.menu {
+  font-size: 3vh;
+  display: inline-block;
+  margin-top: 1vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.contenidomenu {
+  text-align: left;
+  display: none;
+  background-color: #808080;
+  line-height: 200%;
+}
+.contenidomenu a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+.contenidomenu a:hover {
+  background-color: #d3d3d3;
+}
+.menu:hover .contenidomenu {
+  display: block;
+}
+/*aside derecho*/
+aside {
+  display: flex;
+  background-color: #000000;
+  font-family: "Courier New", Courier, monospace, Arial, Helvetica, sans-serif;
+  text-align: center;
+  vertical-align: center;
+  width: 40%;
+  min-width: 40%;
+  max-width: 100%;
+  min-height: 30%;
+  max-height: 100%;
+  margin: 2vh 0vh;
+}
+.asideCalculadoraEjercicios {
+  float: right;
+  position: sticky;
+  min-width: 47%;
+  max-width: 100%;
+  margin: 1vh 0vh;
+}
+.asideprincipal {
+  min-height: 74vh;
+  float: right;
+  position: sticky;
+}
+/*section izquierda*/
+section {
+  display: block;
+  width: 55%;
+  max-width: 100%;
+  min-height: 60%;
+  max-height: 200%;
+  padding-top: 0%;
+  text-align: center;
+  min-height: 32%;
+  margin-top: 0%;
+}
+.sectionCalculadoraEjercicios {
+  margin-top: 2vh;
+  max-width: 50%;
+  padding: 0%;
+  margin-left: 0;
+  margin-right: 0;
+  min-height: 80vh;
+}
+.letras1 {
+  font-family: calculator, Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.principal {
+  position: relative;
+  font-family: calculator, Arial, Helvetica, sans-serif;
+  max-width: 48vw;
+  padding: 0%;
+  text-align: center;
+  min-height: 80vh;
+}
+.vinculos {
+  border-radius: 0;
+  color: #ffc0cb;
+  background-color: #808080;
+}
+.vinculosejercicios {
+  border-radius: 0;
+  font-size: 3.5vh;
+  min-width: 100%;
+  min-height: 4vw;
+  color: #f19a0b;
+  background-color: #000000;
+  font-family: random, Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  margin: 0.5vh 0;
+}
+.vinculosejercicios:hover {
+  background-color: #808080;
+}
+.vinculos:hover {
+  background-color: #000000;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*para las páginas que son sólo de calculadoras*/
+button {
+  cursor: pointer;
+}
+.paginasdecalculadoras {
+  background-color: #000000;
+  min-width: 94vw;
+  max-width: 97vw;
+  min-height: 80vh;
+  max-height: 100vh;
+  margin: 0.5vw 0vw 0vw;
+  text-align: center;
+}
+p.nombrecalcu {
+  font-size: 4vh;
+  font-family: calculator, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #f19a0b;
+  padding: 0;
+  margin: 0;
+}
+.nombre {
+  text-align: center;
+}
+/*footer*/
+footer {
+  width: 99%;
+  margin: 0.5vh 0vh 0vh;
+  display: flex;
+  background-color: #ffa07a;
+  flex: 1 0 auto;
+  bottom: 0;
+  height: 5vh;
+  align-self: center;
+}
+.footerCalculadoraEjercicios {
+  position: relative;
+  height: 5vh;
+  margin: 0.5vh 0vh 0vh;
+  align-self: center;
+}
+.iconosfooter {
+  flex: 0 1 auto;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  min-height: 1vh;
+  filter: grayscale(100%);
+  justify-items: flex-start;
+  align-self: center;
+}
+.volver {
+  font-size: 1vw;
+  filter: grayscale(100%);
+  display: inline-flex;
+  min-height: 1vh;
+  flex: 0 1 auto;
+  padding-right: 5vw;
+  text-align: end;
+  align-self: center;
+}
+.iconosfooter2 {
+  flex: 1 0 auto;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  filter: grayscale(100%);
+  text-align: end;
+  justify-items: flex-end;
+}
+
+.iconosfooter:hover,
+.iconosfooter2:hover {
+  filter: grayscale(0%);
+}
+/*partes de la calculadora*/
+.pantalla,
+.pantallacompleta {
+  padding: 0vw 1vw;
+  font-family: calculator, Arial, Helvetica, sans-serif;
+  font-size: 5vh;
+  border: 0.5vw solid silver;
+  border-radius: 0.5vw;
+  text-align: left;
+  color: #000000;
+  background: #808080;
+}
+.pantalla {
+  width: 80%;
+  border: 0.5vw solid silver;
+  border-radius: 0.5vw;
+  height: 10vh;
+}
+.pantallacompleta {
+  width: 90%;
+  height: 10vh;
+}
+.borrar,
+.borrarpeque,
+.pi,
+.simbolos,
+.simbolospeque,
+.pipeque,
+.numeros,
+.numerospeque,
+.igual,
+.igualpeque,
+.simbolorestopeque,
+.simbolosexp,
+.simbolosexppeque,
+.botoneliminado,
+.botoneliminadopeque {
+  text-align: center;
+  background-color: #7fffd4;
+  color: #ffffff;
+  padding: 1vw 1vw;
+  font-size: 3vh;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5vw 0.5vw;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  height: 9vh;
+}
+.pipeque,
+.pi {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 120%;
+  height: 9vh;
+}
+.signospeque,
+.signos {
+  background-color: #357ec7;
+  color: #ffffff;
+  padding: 1vw 1vw;
+  font-size: 3vh;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5vw 0.5vw;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  height: 9vh;
+}
+.numeros:hover,
+.numerospeque:hover {
+  background-color: #333;
+}
+.botoneliminado:hover,
+.botoneliminadopeque:hover {
+  background-color: #ff0000;
+}
+.igual:hover,
+.igualpeque:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+.pi:hover,
+.pipeque:hover,
+.simbolos:hover,
+.simbolospeque:hover,
+.simbolosexp:hover,
+.simbolosexppeque:hover,
+.simbolorestopeque:hover {
+  background-color: #00bfff;
+}
+.signospeque:hover,
+.signos:hover {
+  background-color: #330066;
+}
+.borrar:hover,
+.borrarpeque:hover {
+  background-color: #40e0d0;
+}
+.borrar,
+.borrarpeque {
+  background-color: #00ffff;
+  color: #000000;
+  font-weight: bold;
+}
+.numeros,
+.numerospeque {
+  background-color: #808080;
+}
+.pi,
+.simbolos,
+.simbolosexppeque,
+.simbolorestopeque {
+  background-color: #87cefa;
+}
+.igual {
+  background-color: #ffffff;
+  color: #000000;
+}
+.borrar,
+.signos,
+.pi,
+.simbolos,
+.numeros,
+.botoneliminado {
+  width: 17%;
+  height: 9vh;
+}
+.borrarpeque,
+.signospeque,
+.pipeque,
+.simbolospeque,
+.numerospeque,
+.botoneliminadopeque,
+.simbolosexppeque {
+  min-width: 5%;
+  width: 14%;
+  height: 9vh;
+}
+.igual {
+  min-width: 15.75%;
+  width: 35%;
+  height: 9vh;
+}
+.igualpeque {
+  min-width: 16.5%;
+  width: 32%;
+  height: 9vh;
+}
+.simbolospeque,
+.pipeque,
+.simbolosexppeque,
+.simbolorestopeque {
+  background-color: #87cefa;
+}
+.botoneliminadopeque,
+.botoneliminado {
+  background-color: #9acd32;
+}
+.igualpeque {
+  background-color: #ffffff;
+  color: #000000;
+}
+/*media query*/
+@media all and (max-width: 623px) {
+  header {
+    height: 4vh;
+  }
+  .linea {
+    font-size: 1.9vh;
+  }
+  ul {
+    font-size: 0.9vh;
+  }
+  .botonmenu {
+    font-size: 2vh;
+  }
+  .menu {
+    font-size: 2vh;
+  }
+  .letras1 {
+    font-size: 4vh;
+  }
+  .vinculosejercicios {
+    font-size: 2.5vh;
+  }
+  p.nombrecalcu {
+    font-size: 3vh;
+  }
+  .iconosfooter {
+    font-size: 2vw;
+  }
+  .volver {
+    font-size: 2vw;
+  }
+  .pantalla,
+  .pantallacompleta {
+    font-size: 4vh;
+  }
+  .borrar,
+  .borrarpeque,
+  .pi,
+  .simbolos,
+  .simbolospeque,
+  .pipeque,
+  .numeros,
+  .numerospeque,
+  .igual,
+  .igualpeque,
+  .simbolorestopeque,
+  .simbolosexp,
+  .simbolosexppeque,
+  .botoneliminado,
+  .botoneliminadopeque {
+    font-size: 1.7vh;
+  }
+  .signospeque,
+  .signos {
+    font-size: 2vh;
+  }
+  .principal {
+    position: static;
+    min-width: 98%;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+  .asideprincipal {
+    position: static;
+    min-width: 90%;
+    margin: 1vh 5vh;
+  }
+  .borrar,
+  .simbolos,
+  .signos,
+  .pi,
+  .numeros,
+  .botoneliminado,
+  .igual {
+    height: 11vh;
+  }
+  .botoneliminadopeque,
+  .pipeque,
+  .signospeque,
+  .simbolosexppeque,
+  .simbolospeque,
+  .numerospeque,
+  .borrarpeque,
+  .igualpeque,
+  .borrarpeque {
+    height: 11vh;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    width: 100%;
+  }
+  .botoneliminadopeque,
+  .pipeque,
+  .signospeque,
+  .simbolosexppeque,
+  .simbolospeque,
+  .numerospeque,
+  .borrarpeque,
+  .borrarpeque {
+    width: 15vw;
+    font-size: 3.6vh;
+  }
+  .igualpeque {
+    width: 33vw;
+    font-size: 4vh;
+  }
+  .pantalla {
+    width: 90%;
+  }
+  .sectionCalculadoraEjercicios {
+    width: 90%;
+  }
+}
+@media all and (max-width: 542px) {
+  .sectionCalculadoraEjercicios {
+    min-width: 100%;
+    margin-top: 12vh;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    min-width: 98%;
+  }
+  .pantalla {
+    width: 90%;
+  }
+}
+@media all and (min-width: 543px) and (max-width: 622px) {
+  .sectionCalculadoraEjercicios {
+    display: block;
+    min-width: 100%;
+    margin-top: 12vh;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    min-width: 90%;
+  }
+  .sectionCalculadoraEjercicios {
+    width: 90%;
+  }
+  .pantalla {
+    width: 90%;
+  }
+}
+@media all and (min-width: 623px) and (max-width: 763px) {
+  .sectionCalculadoraEjercicios {
+    display: block;
+    min-width: 100%;
+    margin-top: 12vh;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    min-width: 80%;
+  }
+  .sectionCalculadoraEjercicios {
+    width: 90%;
+  }
+  .pantalla {
+    max-width: 86%;
+  }
+}
+@media all and (min-width: 722px) and (max-width: 980px) {
+  .linea {
+    font-size: 3.5vh;
+  }
+  ul {
+    font-size: 1.8vh;
+  }
+
+  .paginasdecalculadoras {
+    height: 83vh;
+  }
+  .pantalla {
+    max-width: 84%;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 763px) {
+  .asideprincipal {
+    position: static;
+    min-width: 80%;
+    margin: 1vh 12vh;
+  }
+  .principal {
+    position: static;
+    min-width: 98%;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+  .borrar,
+  .simbolos,
+  .signos,
+  .pi,
+  .numeros,
+  .botoneliminado,
+  .igual {
+    height: 11vh;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    width: 100%;
+  }
+  .sectionCalculadoraEjercicios {
+    width: 90%;
+  }
+  .botoneliminadopeque,
+  .pipeque,
+  .signospeque,
+  .simbolosexppeque,
+  .simbolospeque,
+  .numerospeque,
+  .borrarpeque,
+  .borrarpeque {
+    width: 15vw;
+    font-size: 3.6vh;
+  }
+  .igualpeque {
+    width: 33vw;
+    font-size: 4vh;
+  }
+  .pantalla {
+    width: 90%;
+  }
+}
+@media all and (min-width: 764px) and (max-width: 980px) {
+  .asideprincipal {
+    position: static;
+    min-width: 70%;
+    margin: 1vh 25vh;
+  }
+  .principal {
+    position: static;
+    min-width: 98%;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+  .sectionCalculadoraEjercicios {
+    min-width: 90vw;
+  }
+  .borrar,
+  .simbolos,
+  .signos,
+  .pi,
+  .numeros,
+  .igual,
+  .botoneliminado {
+    height: 11vh;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    width: 100%;
+  }
+  .botoneliminadopeque,
+  .pipeque,
+  .signospeque,
+  .simbolosexppeque,
+  .simbolospeque,
+  .numerospeque,
+  .borrarpeque,
+  .borrarpeque {
+    width: 15vw;
+    font-size: 2.8vh;
+  }
+  .igualpeque {
+    width: 33vw;
+    font-size: 3vh;
+  }
+  .pantalla {
+    width: 90%;
+  }
+}
+@media all and (min-width: 981px) and (max-width: 1023px) {
+  .principal {
+    position: static;
+    min-width: 98%;
+    margin-bottom: 0;
+    min-height: 0;
+  }
+  .asideCalculadoraEjercicios {
+    display: block;
+    margin: 0vh 0vh 5vh;
+    width: 100%;
+  }
+  .botoneliminadopeque,
+  .pipeque,
+  .signospeque,
+  .simbolosexppeque,
+  .simbolospeque,
+  .numerospeque,
+  .borrarpeque,
+  .borrarpeque {
+    width: 16vw;
+    font-size: 2.2vh;
+  }
+  .igualpeque {
+    width: 33vw;
+    font-size: 2.5vh;
+  }
+  .asideprincipal {
+    position: static;
+    min-width: 65%;
+    margin: 1vh 25vh;
+  }
+  .sectionCalculadoraEjercicios {
+    min-width: 90%;
+  }
+  .pantalla {
+    width: 88%;
+  }
+}

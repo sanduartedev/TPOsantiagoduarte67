@@ -1,0 +1,618 @@
+header {
+  color: #000000;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+}
+#fondoGris {
+  min-height: 1vh;
+  background-color: #d1a593;
+}
+.linea {
+  min-height: 1vh;
+  font-family: Hurricane, 'Times New Roman', Times, serif;
+  font-size: 10vh;
+  padding-right: 2vw;
+  display: inline-block;
+  vertical-align: center;
+}
+.lineasincursiva {
+  min-height: 1vh;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3vw;
+}
+.linea2 {
+  min-height: 1vh;
+  display: inline-block;
+  vertical-align: center;
+  padding-left: 2vw;
+  font-size: 3vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.lineaDerecha {
+  min-height: 1vh;
+  float: right;
+  padding-right: 3vh;
+}
+nav {
+  background-color: #942d05;
+  color: #ffffff;
+  font-size: 3vh;
+  text-align: center;
+  height: 4vh;
+  min-width: 100%;
+}
+.botones1,
+.botones,
+.botones2,
+.botones3 {
+  font-size: 3vh;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 10vh;
+  font-family: Oswald, 'Times New Roman', Times, serif;
+}
+.botones {
+  opacity: 0;
+  animation: aparecerConDelay 1s;
+  -webkit-animation: aparecerConDelay 1s;
+  animation-fill-mode: forwards;
+}
+
+.botones1 {
+  opacity: 0;
+  animation: aparecerConDelay 1s;
+  -webkit-animation: aparecerConDelay 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+.botones2 {
+  opacity: 0;
+  animation: aparecerConDelay 1s;
+  -webkit-animation: aparecerConDelay 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.botones3 {
+  opacity: 0;
+  animation: aparecerConDelay 1s;
+  -webkit-animation: aparecerConDelay 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+.botones:hover,
+.botones1:hover,
+.botones2:hover,
+.botones3:hover {
+  color: #ffa07a;
+}
+@keyframes aparecerConDelay {
+  from {
+    opacity: 0;
+    top: -150px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@-webkit-keyframes aparecerConDelay {
+  from {
+    opacity: 0;
+    top: -150px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+/* Menú desplegable del nav */
+.botonmenu {
+  font-size: 2.5vh;
+  background-color: #ffa07a;
+  font-family: Oswald, 'Times New Roman', Times, serif;
+  color: #ffffff;
+  width: 30vw;
+  max-height: 5vh;
+}
+.menu {
+  font-size: 2vh;
+  float: left;
+  display: left;
+  font-family: Oswald, 'Times New Roman', Times, serif;
+  width: 30vw;
+}
+.contenidomenu {
+  font-size: 3vh;
+  text-align: left;
+  display: none;
+  background-color: #d1a593;
+  line-height: 200%;
+  width: 30vw;
+}
+.contenidomenu a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+.contenidomenu a:hover {
+  background-color: #d3d3d3;
+}
+.menu:hover .contenidomenu {
+  display: block;
+}
+/* Fin desplegable del index */
+body {
+  display: flex;
+  color: #040303;
+  min-height: 88vh;
+  font-size: 3vh;
+  max-width: 100vw;
+  background-image: url("../img/fondo.jpg");
+  background-size: cover;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.aspectoIndex {
+  margin: 0;
+  min-height: 80vh;
+  min-width: 100%;
+}
+#asideIndex {
+  min-width: 30vw;
+  max-width: 40vw;
+  min-height: 40vh;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  position: relative;
+}
+#aspectoDonde {
+  display: flex;
+  flex-direction: column;
+  margin: 20vh 0vh 0vh;
+  min-height: 80vh;
+  max-width: 100vw;
+  min-width: 100vw;
+  background-image: none;
+}
+section {
+  display: flex;
+  flex: 1 1 1;
+  justify-content: center;
+  text-align: center;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  margin: 0vh;
+  font-size: 3vh;
+  max-width: 100vw;
+}
+.section2 {
+  margin-top: 20vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: flex-end;
+}
+.tituloSombreado {
+  display: flex;
+  background-color: #ffa07a;
+  justify-content: center;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 4vh;
+  min-width: 80%;
+  margin: 3vw 0;
+}
+.tituloSombreado2 {
+  display: flex;
+  background-color: #ffa07a;
+  justify-content: center;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 4vh;
+  min-width: 80%;
+  margin: 5vh 0 0;
+}
+.vinculo {
+  color: #ffa07a;
+  background-color: #000000;
+  text-decoration: none;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  align-self: stretch;
+}
+.vinculo:hover {
+  color: #000000;
+  background-color: #ffa07a;
+  opacity: 1;
+}
+/*About*/
+#articuloAbout {
+  margin: 2vh 0.5vw 15vh;
+  display: block;
+  min-width: 98%;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+#horarioSombreado {
+  display: flex;
+  background-color: #ffa07a;
+  align-self: center;
+  text-align: center;
+}
+.botonHorario {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+.botonHorarioFino {
+  font-size: 150%;
+  width: 7%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+.botonHorarioS {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #008000;
+  color: #ffffff;
+}
+.botonHorarioM {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #942d05;
+  color: #ffffff;
+}
+.botonHorarioI {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #999999;
+  color: #ffffff;
+}
+.botonHorarioP {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #0e4747;
+  color: #ffffff;
+}
+.botonHorarioF {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #d1a593;
+  color: #ffffff;
+}
+.botonHorarioT {
+  font-size: 150%;
+  width: 16%;
+  height: 25%;
+  margin: 0.25vh;
+  background-color: #666666;
+  color: #ffffff;
+}
+#aspectoAbout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18vh;
+  min-height: 70vh;
+  background-image: none;
+  width: 98vw;
+}
+#sectionAbout {
+  display: flex;
+  flex: 1 1 1;
+}
+#animeAbout {
+  margin: 1vw;
+  display: flex;
+  flex: 1 1 0;
+  max-height: 50vh;
+  z-index: -1;
+  animation-name: cambiarFotoAbout;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 1, 0);
+}
+@keyframes cambiarFotoAbout {
+  0% {
+    background-image: url("../img/quienessomos2.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  25% {
+    background-image: url("../img/quienessomos3.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  50% {
+    background-image: url("../img/quienessomos4.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  75% {
+    background-image: url("../img/quienessomos5.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  100% {
+    background-image: url("../img/quienessomos2.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+#animeAbout2 {
+  display: flex;
+  flex: 1 1 0;
+  max-height: 50vh;
+  z-index: -1;
+  animation-name: cambiarFotoAbout2;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 1, 0);
+}
+@keyframes cambiarFotoAbout2 {
+  0% {
+    background-image: url("../img/quienessomos6.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout2;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  25% {
+    background-image: url("../img/quienessomos7.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout2;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  50% {
+    background-image: url("../img/quienessomos8.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout2;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  75% {
+    background-image: url("../img/quienessomos9.jpg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout2;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  100% {
+    background-image: url("../img/quienessomos6.jpeg");
+    opacity: 1;
+    -webkit-animation: cambiarFotoAbout2;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+#textoAbout {
+  display: flex;
+  flex: 3 0 0;
+  margin-bottom: 10vh;
+}
+/*Fin About*/
+iframe {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 80vw;
+  height: 60vh;
+  border: 0;
+}
+#nombreContacto,
+#mailContacto,
+#mensajeContacto,
+#numerodetelefono {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  font-size: 3vh;
+  font-weight: bolder;
+  vertical-align: middle;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 30vw;
+  height: 4vh;
+  font-size: 3vh;
+  margin-left: 1vw;
+  border: 1px solid;
+  background-color: #999999;
+}
+textarea {
+  text-decoration: none;
+  font-size: 3vh;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  height: 25vh;
+  width: 50vw;
+  vertical-align: middle;
+  margin-left: 1vw;
+  border: 1px solid;
+  background-color: #999999;
+}
+#enviar {
+  min-width: 6vw;
+  min-height: 6vh;
+  font-size: 3vh;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  background-color: #ffa07a;
+  margin-bottom: 8vh;
+}
+#enviar:hover {
+  color: #ffffff;
+  background-color: #424242;
+}
+footer {
+  color: #000000;
+  background-color: #ffa07a;
+  width: 100vw;
+  padding: 0;
+  height: 5vh;
+  bottom: 0;
+  margin-top: 2vh;
+  position: fixed;
+  font-size: 2vh;
+  display: inline;
+  align-self: center;
+}
+.iconosfooter,
+.iconosfooter2 {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  min-height: 1vh;
+  display: inline;
+  filter: grayscale(100%);
+  align-self: center;
+}
+.iconosfooter2 {
+  float: right;
+  align-self: center;
+}
+.iconosfooter:hover {
+  filter: grayscale(0%);
+}
+@media all and (max-width: 599px) {
+  .linea {
+    font-size: 5vh;
+  }
+  .linea2 {
+    font-size: 2vh;
+  }
+  .ocultar {
+    display: flex;
+    visibility: hidden;
+  }
+  .botones1,
+  .botones,
+  .botones2,
+  .botones3 {
+    font-size: 2vh;
+    margin-left: 1vh;
+  }
+  .vinculo {
+    font-size: 2vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+  }
+  .iconosfooter {
+    font-size: 2vh;
+  }
+  .botonmenu {
+    min-width: 20vw;
+    margin-top: 1vh;
+  }
+  #animeIndex {
+    min-height: 50vh;
+  }
+  .tituloSombreado2 {
+    margin: 5vh 0 0;
+  }
+  .botonHorario,
+  .botonHorarioFino,
+  .botonHorarioS,
+  .botonHorarioM,
+  .botonHorarioI,
+  .botonHorarioP,
+  .botonHorarioF,
+  .botonHorarioT {
+    font-size: 40%;
+    width: 14%;
+    height: 12%;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1300px) {
+  .linea {
+    font-size: 7vh;
+  }
+  .ocultar2 {
+    display: flex;
+    visibility: hidden;
+  }
+  .botones1,
+  .botones,
+  .botones2,
+  .botones3 {
+    font-size: 2vh;
+    margin-left: 4vh;
+  }
+  .vinculo {
+    font-size: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .iconosfooter {
+    font-size: 2vh;
+  }
+  .botonmenu {
+    margin-top: 1vh;
+    min-width: 30vw;
+  }
+  #animeIndex {
+    min-height: 50vh;
+  }
+  .tituloSombreado2 {
+    margin: 3vh 0 0;
+  }
+  .botonHorario,
+  .botonHorarioFino,
+  .botonHorarioS,
+  .botonHorarioM,
+  .botonHorarioI,
+  .botonHorarioP,
+  .botonHorarioF,
+  .botonHorarioT {
+    font-size: 40%;
+    width: 14%;
+    height: 12%;
+  }
+}

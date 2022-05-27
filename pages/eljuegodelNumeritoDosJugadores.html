@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estiloElJuego.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>El juego del numerito</title>
+    <link rel="icon" type="image/png" href="../img/favicon3.png" sizes="64x64">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="fixed-top"></div>
+    <header class="headerMaterias">
+    <div class="linea">EGR 2022</div>
+    <span class="lineasincursiva">|</span>
+    <div class="animate__animated animate__headShake">Juegos y otras</div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa07a;">
+    <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Página Principal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas de actividades</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../pages/practicasDelLenguaje.html">Prácticas del Lenguaje</a>
+                <a class="dropdown-item" href="../pages/matematica.html">Matemática</a>
+                <a class="dropdown-item" href="../pages/cienciasSociales.html">Ciencias Sociales</a>
+                <a class="dropdown-item" href="../pages/cienciasNaturales.html">Ciencias Naturales</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../pages/eljuegodelNumerito.html">El juego del numerito</a>
+                <a class="dropdown-item" href="../pages/composicion.html">La historia de San Martín</a>
+                <a class="dropdown-item" href="../pages/botellasDeAmor.html">Botellas de amor</a>
+                <a class="dropdown-item" href="../pages/sorteoAlumnos.html">Orden de alumnos</a>
+                <a class="dropdown-item" href="../pages/sorteoMafia.html">Sorteo Mafia</a>
+                <a class="dropdown-item" href="../pages/piedra_papel_tijera.html">Piedra, papel o tijera</a>
+                <a class="dropdown-item" href="../pages/ahorcado.html">Ahorcado</a>
+              </div>
+            </li>
+          <ul>
+        </div>
+  </nav>
+  </div>
+  <div class="centradoGris">
+    <div class="centrar">
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" id="iconoIzquierda" href="../pages/comoJugareljuegodelNumerito.html">Cómo jugar <i class="fa-solid fa-circle-question fa-2x"></i></a>
+        <div class="centrar">
+            <p id="tituloJuego">El juego del numerito</p>
+            <div class="centrar">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" id="iconoDerecha" href="../pages/comoJugarPaenza.html">Explicación A. Paenza <i class="fa-solid fa-clipboard-question fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cuatroColumnasDos">
+    <article id="izquierdaD">
+      <div id="centrarJugadas">
+        <div id="subrayado2">Jugadas</div>
+      </div>
+      <div id="centrarJugadas">
+        <div id="numerosColores"></div>
+      </div>
+    </article>
+    <article id="centroD">
+      <div class="centrado">
+        <div class="centrarBotones">
+        <span>Ingrese<br>su numerito: </span>
+        <!-- <h2 id="paratiempo"></h2>-->
+        <span class="espacio2"></span>
+        <input type="text" id="respuesta" placeholder="de 4 cifras"></input>
+        <span class="espacio2"></span>
+        <button id="botonIntentar" onClick="chequearNumero()"><i class="fa-solid fa-circle-play"></i></button>
+      </div>
+        <div id="interlineado">
+          <h2 id="numeroChequeado">0000</h2>
+          <h2 id="chequeoNumero">¿?¿?</h2>
+          <h2 id="paratiempo"></h2>
+        </div>
+          <div class="centrar">
+            <span>Cantidad de intentos: </span><span id="contador"></span>
+          </div>
+        </div>
+    </article>
+    <article id="derechaD">
+      <div class="centrado">
+        <div class="centrarTextoGrid">
+          <div id="nombre1"><input type="text" id="nombreJugador1" placeholder="Participante 1"><span class="espacio2"></span><i class="fa-solid fa-arrows-rotate" onClick= "cambiarNombre1()"></i><br></input></div>
+        </div>
+        <div class="centrarTextoGrid">
+          <div id="puntaje1"><b>Puntaje:</b></div>
+        </div>
+        <div class="centrarTextoGrid">
+          <div id="partidas1"><b>Numeritos encontrados:</b></div>
+        </div>    
+        <div class="centrarTextoTurno">
+          <div id="turno1"></div>
+        </div>
+      </div>
+    </article>
+    <article id="masDerechaD">
+      <div class="centrado">
+        <div class="centrarTextoGrid">
+          <div id="nombre2"><input type="text" id="nombreJugador2" placeholder="Participante 2"><span class="espacio2"></span><i class="fa-solid fa-arrows-rotate" onClick="cambiarNombre2()"></i><br></input></div>
+        </div>
+        <div class="centrarTextoGrid">
+          <div id="puntaje2"><b>Puntaje:</b></div>
+        </div>
+        <div class="centrarTextoGrid">
+          <div id="partidas2"><b>Numeritos encontrados:</b></div>
+        </div>
+        <div class="centrarTextoTurno">
+          <div id="turno2"></div>
+        </div>
+        <div class="centrarBoton">
+          <button id="finalizar" type="button" onClick="finalizarPartida()">FINALIZAR JUEGO</button>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="centrarBoton">
+    <a href="../pages/juegosyOtras.html"><button type="button" class="btn btn-primary" style="background-color: #ffa07a;">Volver a Juegos y otros</button></a>
+    <span class="espacio2"></span>
+    <a href="../pages/eljuegodelNumerito.html"><button class="volverJugar" type="button">Modo Clásico</button></a>  
+    <span class="espacio2"></span>
+    <a href="../pages/eljuegodelNumeritoFacil.html"><button class="volverJugar" type="button">Modo fácil</button></a>
+    <span class="espacio2"></span>
+    <a href="../pages/eljuegodelNumeritoCarrera.html"><button class="volverJugar" type="button">Modo Carrera</button></a>  
+    <span class="espacio2"></span>
+    <a href="../pages/eljuegodelNumeritoDosJugadores.html"><button class="volverJugar" type="button">Volver a jugar</button></a>
+</div>
+  <footer class="text-center text-white" style="background-color: #ffa07a;">
+    <div class="container pt-1">
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/profile.php?id=100079688658308&sk=about" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/septimoesc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>  
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:septimoesc24de8@gmail.com" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+      <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com/esc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+    </div>  
+  </footer>
+  <script src="../JS/numeritoDosJugadores.js"></script>
+</body>
+</html>

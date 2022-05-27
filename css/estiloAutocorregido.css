@@ -1,0 +1,326 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: DancingScript;
+  src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+h2 {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  font-size: 2.5em;
+}
+h3 {
+  font-family: DancingScript, "Courier New", Courier, monospace;
+  font-size: 2em;
+  background-color: #000000;
+  color: #ffffff;
+}
+.tresColumnas {
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-gap: 0vw;
+}
+.cuatroColumnas {
+  display: grid;
+  grid-template-columns: 24vw 24vw 24vw 24vw;
+  grid-gap: 0vw;
+}
+.dosColumnas {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  grid-gap: 0vw;
+}
+.ejercicioImpar {
+  background-color: #7a9bff;
+}
+.ejercicioPar {
+  background-color: #2a5cf3;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 16px;
+}
+#botonTerminar {
+  margin: 1vh;
+  width: 10em;
+  height: 2em;
+  font-size: 2em;
+  background-color: #d1a593;
+}
+#divCentrar {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+#botonTerminar:hover {
+  background-color: #006400;
+  color: #ffffff;
+}
+body {
+  background-color: #edc4b4;
+  font-size: 1.5em;
+}
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.menu,
+.headerMaterias,
+.articulo1,
+.aside1,
+footer,
+.articulo2,
+.articulo3,
+.articulo4 {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin: 1vw;
+  justify-content: center;
+  align-items: flex-end;
+}
+.headerMaterias {
+  background-color: #000000;
+  color: #ffffff;
+  height: 15vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: Rye-Regular;
+  src: url(../fonts/Rye-Regular.ttf);
+}
+.linea {
+  display: flex;
+  flex: 2 1 auto;
+  font-family: Rye-Regular, 'Times New Roman', Times, serif;
+  justify-content: center;
+  font-size: 2.5em;
+  text-align: center;
+}
+.lineasincursiva {
+  display: flex;
+  flex: 1 1 auto;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10vh;
+}
+.animate__animated.animate__bounceInLeft {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 5vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  animation-iteration-count: 5;
+  animation-duration: 4s;
+}
+/* Menú desplegable del nav */
+.botonmenu {
+  font-size: 2.5vh;
+  background-color: #ffa07a;
+  font-family: Oswald, 'Times New Roman', Times, serif;
+  color: #ffffff;
+  width: 40vw;
+  max-height: 5vh;
+}
+.menu {
+  font-size: 2vh;
+  display: block;
+  font-family: Oswald, 'Times New Roman', Times, serif;
+  max-width: 90vw;
+  width: 40vw;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 1vw;
+}
+.contenidomenu {
+  font-size: 3vh;
+  text-align: left;
+  display: none;
+  background-color: #d1a593;
+  width: 40vw;
+}
+.contenidomenu a {
+  display: none;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+.contenidomenu a:hover {
+  background-color: #d3d3d3;
+}
+.menu:hover .contenidomenu {
+  display: block;
+}
+/* Fin desplegable del index */
+article {
+  min-height: 65vh;
+  min-width: 90vw;
+  text-align: center;
+  padding-left: 2vw;
+}
+@font-face {
+  font-family: OleoScriptSwashCaps-Bold;
+  src: url(../fonts/OleoScriptSwashCaps-Bold.ttf);
+}
+@font-face {
+  font-family: calculator;
+  src: url(../fonts/Calculator.ttf);
+}
+h4,
+#valueInput {
+  font-family: "OleoScriptSwashCaps-Bold", "Franklin Gothic Medium", 'Times New Roman', Times, serif
+    "Arial Narrow";
+  font-size: 1.5em;
+  margin: 1vh 0;
+}
+.cuenta,
+#cantidadRespondidas,
+#cantidadCorrectas,
+#cantidadIncorrectas {
+  font-family: "calculator", Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+}
+input {
+  width: 4em;
+  height: 1.7em;
+  font-size: 1.4em;
+}
+.botonResponder {
+  width: 10em;
+  height: 1.7em;
+  font-size: 1em;
+  background-color: #d1a593;
+}
+.botonResponder:hover {
+  background-color: #ffa07a;
+}
+footer {
+  display: flex;
+  color: #000000;
+  background-color: #ffa07a;
+  width: 90vw;
+  order: 11;
+  flex: 1 1 auto;
+  margin-bottom: 0;
+}
+.footerTexto {
+  width: 90vw;
+}
+.iconosfooter {
+  flex: 0 1 auto;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  filter: grayscale(100%);
+  justify-items: flex-start;
+}
+.iconosfooter2 {
+  flex: 1 0 auto;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-size: 2vh;
+  filter: grayscale(100%);
+  text-align: end;
+  justify-items: flex-end;
+}
+.iconosfooter:hover,
+.iconosfooter2:hover {
+  filter: grayscale(0%);
+}
+.espacio {
+  padding: 0vw 3vw;
+}
+@media all and (max-width: 599px) {
+  .botonmenu {
+    min-width: 90vw;
+  }
+  .menu {
+    min-width: 90vw;
+  }
+  .contenidomenu {
+    min-width: 90vw;
+  }
+  .linea {
+    font-size: 5vh;
+  }
+  .animate__animated.animate__headShake,
+  .animate__animated.animate__jello,
+  .animate__animated.animate__bounceInLeft {
+    font-size: 3vh;
+  }
+  .tresColumnas {
+    grid-template-columns: auto;
+  }
+  .cuatroColumnas {
+    grid-template-columns: 48vw 48vw;
+  }
+  .dosColumnas {
+    grid-template-columns: auto;
+  }
+  h4,
+  #valueInput {
+    font-size: 1.5em;
+    margin: 1vh 0;
+  }
+  .cuenta,
+  #cantidadRespondidas,
+  #cantidadCorrectas,
+  #cantidadIncorrectas {
+    font-size: 1em;
+  }
+  img {
+    max-width: 90vw;
+  }
+  input {
+    width: 3em;
+    height: 1.5em;
+    font-size: 1.3em;
+  }
+  .botonResponder {
+    width: 10em;
+    height: 1.7em;
+    font-size: 0.8em;
+    margin: 0.5vh;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  .linea {
+    font-size: 6vh;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 768px) {
+  .animate__animated.animate__headShake,
+  .animate__animated.animate__jello,
+  .animate__animated.animate__bounceInLeft {
+    font-size: 3.5vh;
+  }
+  .ocultar2 {
+    display: flex;
+    visibility: hidden;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1023px) {
+  .animate__animated.animate__headShake,
+  .animate__animated.animate__jello,
+  .animate__animated.animate__bounceInLeft {
+    font-size: 4vh;
+  }
+  .ocultar2 {
+    display: flex;
+    visibility: hidden;
+  }
+}
+@media all and (min-width: 1023px) and (max-width: 1290px) {
+  .animate__animated.animate__headShake,
+  .animate__animated.animate__jello,
+  .animate__animated.animate__bounceInLeft {
+    font-size: 4vh;
+  }
+  .ocultar2 {
+    display: flex;
+    visibility: hidden;
+  }
+}

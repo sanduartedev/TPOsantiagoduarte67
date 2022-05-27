@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estiloSorteoyahorcado.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Ahorcado</title>
+    <link rel="icon" type="image/png" href="../img/favicon6.jpg" sizes="64x64">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="fixed-top"></div>
+    <header class="headerMaterias">
+    <div class="linea">EGR 2022</div>
+    <span class="lineasincursiva">|</span>
+    <div class="animate__animated animate__headShake">Juegos y otras</div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffa07a;">
+    <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Página Principal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Páginas de actividades</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../pages/practicasDelLenguaje.html">Prácticas del Lenguaje</a>
+                <a class="dropdown-item" href="../pages/matematica.html">Matemática</a>
+                <a class="dropdown-item" href="../pages/cienciasSociales.html">Ciencias Sociales</a>
+                <a class="dropdown-item" href="../pages/cienciasNaturales.html">Ciencias Naturales</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../pages/eljuegodelNumerito.html">El juego del numerito</a>
+                <a class="dropdown-item" href="../pages/composicion.html">La historia de San Martín</a>
+                <a class="dropdown-item" href="../pages/botellasDeAmor.html">Botellas de amor</a>
+                <a class="dropdown-item" href="../pages/sorteoAlumnos.html">Orden de alumnos</a>
+                <a class="dropdown-item" href="../pages/sorteoMafia.html">Sorteo Mafia</a>
+                <a class="dropdown-item" href="../pages/piedra_papel_tijera.html">Piedra, papel o tijera</a>
+                <a class="dropdown-item" href="../pages/ahorcado.html">Ahorcado</a>
+              </div>
+            </li>
+          <ul>
+        </div>
+  </nav>
+  </div>
+  <div class="divCentrarAhorcado">
+        <p id="tituloJuego">Ahorcado</p>
+</div>
+  <section id="cuatroColumnasAhorcado_color">
+    <aside id="columna1Ahorcado">
+      <p id="cantidad_errores"><img src="../img/ahorcado.jpg" alt="ahorcado"></p>
+    </aside>
+    <aside id="columna1AhorcadoFila2">
+      <div class="divCentrar">
+        <p><input id="ocultar_teclado" type="button" value="Ocultar Teclado" onClick="ocultar_teclado()"></p>
+        <p><input id="mostrar_teclado" type="button" value="Mostrar Teclado" onClick="mostrar_teclado()"></p>
+      </div>
+    </aside>
+    <article id="columna2Ahorcado">
+      <div class="divCentrar">
+        <h3> Letras que no están: </h3>
+      </div>
+      <div class="divCentrar">
+        <p id="letrasNo"></p>
+      </div>
+    <div class="divCentrar">
+      <h2 id="imprimirPalabra"></h2>
+    </div>
+    </article>
+<article id="columna2AhorcadoFila2">
+  <div class="divCentrar">
+    <form id="formAhorcado">
+        <div class="teclado1">
+          <input id="Q" class="letritas" type="button" value="Q" onClick="respuesta.value='Q'">
+          <input id="W" class="letritas" type="button" value="W" onClick="respuesta.value='W'">
+          <input id="E" class="letritas" type="button" value="E" onClick="respuesta.value='E'">
+          <input id="R" class="letritas" type="button" value="R" onClick="respuesta.value='R'">
+          <input id="T" class="letritas" type="button" value="T" onClick="respuesta.value='T'">
+          <input id="Y" class="letritas" type="button" value="Y" onClick="respuesta.value='Y'">
+          <input id="U" class="letritas" type="button" value="U" onClick="respuesta.value='U'">
+          <input id="I" class="letritas" type="button" value="I" onClick="respuesta.value='I'">
+          <input id="O" class="letritas" type="button" value="O" onClick="respuesta.value='O'">
+          <input id="P" class="letritas" type="button" value="P" onClick="respuesta.value='P'">
+        </div>
+        <div class="teclado2">
+          <input id="A" class="letritas" type="button" value="A" onClick="respuesta.value='A'">
+          <input id="S" class="letritas" type="button" value="S" onClick="respuesta.value='S'">
+          <input id="D" class="letritas" type="button" value="D" onClick="respuesta.value='D'">
+          <input id="F" class="letritas" type="button" value="F" onClick="respuesta.value='F'">
+          <input id="G" class="letritas" type="button" value="G" onClick="respuesta.value='G'">
+          <input id="H" class="letritas" type="button" value="H" onClick="respuesta.value='H'">
+          <input id="J" class="letritas" type="button" value="J" onClick="respuesta.value='J'">
+          <input id="K" class="letritas" type="button" value="K" onClick="respuesta.value='K'">
+          <input id="L" class="letritas" type="button" value="L" onClick="respuesta.value='L'">
+          <input id="Ñ" class="letritas" type="button" value="Ñ" onClick="respuesta.value='Ñ'">
+        </div>
+        <div class="teclado3">
+          <input id="Z" class="letritas" type="button" value="Z" onClick="respuesta.value='Z'">
+          <input id="X" class="letritas" type="button" value="X" onClick="respuesta.value='X'">
+          <input id="C" class="letritas" type="button" value="C" onClick="respuesta.value='C'">
+          <input id="V" class="letritas" type="button" value="V" onClick="respuesta.value='V'">
+          <input id="B" class="letritas" type="button" value="B" onClick="respuesta.value='B'">
+          <input id="N" class="letritas" type="button" value="N" onClick="respuesta.value='N'">
+          <input id="M" class="letritas" type="button" value="M" onClick="respuesta.value='M'">
+        </div>
+      </div>
+</article>
+<article id="columna4AhorcadoFila2">
+      <div class="divCentrar">
+        <p id="pantalla"><input id="pantallita" type="textfield" name="respuesta" value=""></p>
+        <p><input id="probar" type="button" value="Probar" onClick="probar_letra(respuesta.value)"></p>
+    </div>
+  </form>
+</article>
+<article id="columna2AhorcadoFila3">
+    <div class="divCentrar">
+      <a href="../pages/ahorcadoElegir.html"><input id="probar4" value='Modo "Elegir palabra"' type="button"></p></a>
+    </div>
+    <div class="divCentrar">
+        <a href="../pages/ahorcadoPrimer.html"><input id="probar4" value='Modo "Primer grado"' type="button"></p></a>
+    </div>
+    <div class="divCentrar">
+          <p><input id="probar2" type="button" value="Jugar de nuevo" onClick="volver_a_empezar()"></p>
+    </div>
+</article>
+</section>      
+    <footer class="text-center text-white" style="background-color: #ffa07a;">
+      <div class="container pt-1">
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/profile.php?id=100079688658308&sk=about" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/septimoesc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>  
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="mailto:septimoesc24de8@gmail.com" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com/esc24de8" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+      </div>  
+    </footer>  
+    <script src="../JS/ahorcado.js"></script>
+</body>
+</html>

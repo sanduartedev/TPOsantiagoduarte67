@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bec3c4555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurricane|Oswald|Quicksand">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <Link rel="stylesheet" type="text/css" href="../css/calculadoraestilos.css" media="all">
+    <title>Calculadoras para 7mo</title>
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="64x64">
+</head>
+<header>
+    <div class="linea">Ejercicios para usar la calculadora   |   </div>
+    <ul>Calculadoras de <br> uso escolar</ul>
+</header>
+<body>
+    <aside class="asideCalculadoraEjercicios"> 
+        <!-- Empieza código calculadora común -->
+        <form name="calculadora">
+            <p class="nombrecalcu">CALCULADORA BASICA</p>
+            <input class="pantalla" type="textfield" name="respuesta" value="">
+            <br>
+            <input class="borrarpeque" type="reset" value="C">
+            <input class="simbolospeque" type="button" value="(" onClick="respuesta.value+='('">
+            <input class="simbolospeque" type="button" value=")" onClick="respuesta.value+=')'">
+            <input class="signospeque" type="button" value="/" onClick="respuesta.value+='/'">
+            <input class="pipeque" type="button" value="π" onClick="respuesta.value+='3.1415926535897932384626433'">
+            <input class="numerospeque" type="button" value="7" onClick="respuesta.value+='7'">
+            <input class="numerospeque" type="button" value="8" onClick="respuesta.value+='8'">
+            <input class="numerospeque" type="button" value="9" onClick="respuesta.value+='9'">
+            <input class="signospeque" type="button" value="+" onClick="respuesta.value+='+'">
+            <input class="simbolospeque" type="button" value="%" onClick="respuesta.value+='/100*'">
+            <input class="numerospeque" type="button" value="4" onClick="respuesta.value+='4'">
+            <input class="numerospeque" type="button" value="5" onClick="respuesta.value+='5'">
+            <input class="numerospeque" type="button" value="6" onClick="respuesta.value+='6'">
+            <input class="signospeque" type="button" value="-" onClick="respuesta.value+='-'">
+            <input class="simbolospeque" type="button" value="R" onClick="respuesta.value+='%'">
+            <input class="numerospeque" type="button" value="1" onClick="respuesta.value+='1'">
+            <input class="numerospeque" type="button" value="2" onClick="respuesta.value+='2'">
+            <input class="numerospeque" type="button" value="3" onClick="respuesta.value+='3'">
+            <input class="signospeque" type="button" value="x" onClick="respuesta.value+='*'">
+            <input class="simbolosexppeque" type="button" value="Exp" onClick="respuesta.value+='**'">
+            <input class="simbolospeque" type="button" value="," onClick="respuesta.value+='.'">
+            <input class="numerospeque" type="button" value="0" onClick="respuesta.value+='0'">
+            <input class="borrarpeque" type="button" value="←" onClick="respuesta.value=respuesta.value.substring(0, respuesta.value.length -1)">
+            <input class="igualpeque" type="button" value="=" onClick="respuesta.value=eval(respuesta.value)">
+        </form>
+        <!-- Finaliza código de calculadora común -->
+    </aside>
+    <section class="principal">
+        <div class="menu">
+            <button class="botonmenu">&#9776 Menú desplegable con diferentes calculadoras para usar</button>
+            <div class="contenidomenu">
+                <a blank href="../pages/calculadorabasica.html" target="_blank">Calculadora básica</a>
+                <a href="../pages/calculadorasin4.html" target="_blank">Calculadora sin 4</a>
+                <a href="../pages/calculadorasin6masmenos.html" target="_blank">Calculadora sin 6, + ni -</a>
+                <a href="../pages/calculadorasin8.html" target="_blank">Calculadora sin 8</a>
+            </div>
+        </div>
+        <p class="letras1">Ejercicios con calculadora</p>
+        <form>
+            <a href="../pages/paginas24y25.html">
+                <input class="vinculosejercicios" type="button" value="Con calculadora básica (págs. 24 y 25)"></a>
+            <a href="../pages/ejerciciossin8.html">
+                <input class="vinculosejercicios" type="button" value="Sin la tecla 8 (pág. 26)"></a>
+            <a href="../pages/ejerciciossin6masmenos.html">
+                <input class="vinculosejercicios" type="button" value="Sin las teclas 6, + ni - (pág. 26)"></a>
+            <a href="../pages/ejerciciossin4.html">
+                <input class="vinculosejercicios" type="button" value="Sin la tecla 4 (pág. 27)"></a>
+            <a href="../pages/paginas26y27.html">
+                <input class="vinculosejercicios" type="button" value="Con calculadora básica II (págs. 26 y 27)"></a>
+            <a href="../pages/paginas28y29.html">
+                <input class="vinculosejercicios" type="button" value="Múltiplos y divisores (págs. 28 y 29)"></a>     
+        </form>
+    </section>
+    <footer>
+        <p class="iconosfooter2"><div class="volver"><a href="../index.html"><i class="fa-solid fa-house-chimney fa-2x"></i></a></p></div> 
+        <p class="iconosfooter2"><div class="volver">Ejercicios del cuadernillo: "Estudiar y aprender. Mi libro en Séptimo"</p></div>
+    </footer>
+</body>
+</html>
